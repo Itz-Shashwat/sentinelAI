@@ -19,16 +19,14 @@ def load_data(csv_file_path):
     # Load data
     df = pd.read_csv(csv_file_path)
 
-    # Normalize all columns except 'Normalized_Length' which is already normalized
+    # Normalizing column 1 to -1
     features = df.drop(columns=['Normalized_Length'])
-
-    # Normalize the data between -1 and 1
     normalized_data = (features - features.min()) / (features.max() - features.min()) * 2 - 1
     normalized_data['Normalized_Length'] = df['Normalized_Length']  # Keep normalized length intact
 
     return normalized_data
 
-# Define Generator
+
 def build_generator(latent_dim, input_shape):
     model = models.Sequential()
     model.add(layers.Dense(256, input_dim=latent_dim, activation='relu'))
@@ -40,29 +38,28 @@ def build_generator(latent_dim, input_shape):
     model.add(layers.Dense(input_shape, activation='tanh'))
     return model
 
-# Define Discriminator
 def build_discriminator(input_shape):
     model = models.Sequential()
     model.add(layers.Dense(1024, input_dim=input_shape, activation='relu'))
     model.add(layers.Dense(512, activation='relu'))
     model.add(layers.Dense(256, activation='relu'))
-    model.add(layers.Dense(1, activation='sigmoid'))  # Binary output: real or fake
+    model.add(layers.Dense(1, activation='sigmoid'))  
     return model
 
-# Combine the generator and discriminator into a GAN
+# Combining both
 def build_gan(generator, discriminator):
     model = models.Sequential()
     model.add(generator)
-    discriminator.trainable = False  # During GAN training, freeze discriminator
+    discriminator.trainable = False  # freeze discriminator
     model.add(discriminator)
     return model
 
-# Save the model (Generator, Discriminator, GAN) to disk
+# Save 
 def save_model(model, model_name):
     model.save(model_name)
     print(f"{model_name} saved!")
 
-# Function to train GAN
+# train GAN
 def train_gan(data, epochs, batch_size, latent_dim=100):
     generator = build_generator(latent_dim, data.shape[1])
     discriminator = build_discriminator(data.shape[1])
@@ -85,13 +82,13 @@ def train_gan(data, epochs, batch_size, latent_dim=100):
         real_labels = np.ones((batch_size, 1))  # Shape must match discriminator output
         fake_labels = np.zeros((batch_size, 1))  # Shape must match discriminator output
         
-        # Train discriminator on real and fake data
+        # Train discriminator 
         d_loss_real = discriminator.train_on_batch(real_data, real_labels)
         d_loss_fake = discriminator.train_on_batch(fake_data, fake_labels)
         
         # Train generator
         noise = np.random.normal(0, 1, (batch_size, latent_dim))
-        valid_labels = np.ones((batch_size, 1))  # Trick discriminator into believing generated data is real
+        valid_labels = np.ones((batch_size, 1))  # Trick discriminator 
         g_loss = gan.train_on_batch(noise, valid_labels)
 
         if epoch % 1000 == 0:  # Adjust log interval as needed
@@ -106,21 +103,20 @@ def generate_decoy_data(generator, latent_dim=100, num_samples=100):
     decoy_data = generator.predict(noise)
     return decoy_data
 
-# Path to the CSV file containing network traffic data (update the path)
 
 
-# Load data from CSV file
+# Load data 
 data = load_data(csv_file_path)
 
-# Train the GAN model on the data and get the trained generator, discriminator, and GAN
+# Train GAN 
 trained_generator, trained_discriminator, trained_gan = train_gan(data, epochs=10000, batch_size=64)
 
-# Generate decoy data using the trained generator
+# Generate decoy data 
 decoy_data = generate_decoy_data(trained_generator, latent_dim=100, num_samples=10)
 
-# Convert decoy data to DataFrame and print
+# Convert decoy data 
 decoy_df = pd.DataFrame(decoy_data, columns=data.columns)
 print(decoy_df.head())
 
-# Optionally, save the generated decoy data to a CSV file
+# save data
 decoy_df.to_csv(output_csv_path, index=False)
