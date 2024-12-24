@@ -7,8 +7,7 @@ from sklearn.preprocessing import OneHotEncoder, LabelEncoder, MinMaxScaler
 import concurrent.futures
 import os
 
-# Load dataset
-data = pd.read_csv(r'G:\sem8\Capstone\Data\Normalise\datanormal.csv')
+data = pd.read_csv(r'G:\sem8\Capstone\Codes\git repo\sentinelAI\backend\Data\normal data\normalized_network_data.csv')
 
 # Encode 'Protocol' as integers
 le = LabelEncoder()
@@ -21,33 +20,36 @@ protocol_ohe = encoder.fit_transform(data['ProtocolEncoded'].values.reshape(-1, 
 
 # Normalize 'Length' and other features
 scaler = MinMaxScaler(feature_range=(-1, 1))
-scaled_data = scaler.fit_transform(data.drop('Protocol', axis=1))  # Exclude 'Protocol' column from scaling
+scaled_data = scaler.fit_transform(data.drop(['Protocol', 'ProtocolEncoded'], axis=1))  # Exclude 'Protocol' and 'ProtocolEncoded' columns from scaling
+
+# Combine the one-hot encoded protocol data with the scaled features
 scaled_data = np.concatenate((protocol_ohe, scaled_data), axis=1)
 
-# Set up input data
+# Set up input data for GAN
 gan_input_data = scaled_data
 
 latent_dim = 50
 
-def build_generator(latent_dim, num_protocols):
+def build_generator(latent_dim, num_protocols, num_features):
     model = keras.Sequential([
-        layers.Dense(64, activation="relu", input_dim=latent_dim),
-        layers.Dense(32, activation="relu"),
-        layers.Dense(num_protocols + 1, activation='tanh')  # +1 for 'Length' column
+        layers.Dense(128, activation="relu", input_dim=latent_dim),
+        layers.Dense(64, activation="relu"),
+        layers.Dense(num_protocols + num_features, activation='tanh')  # Output includes num_protocols + other features
     ])
     return model
 
-def build_discriminator(num_protocols):
+def build_discriminator(num_protocols, num_features):
     model = keras.Sequential([
-        layers.Dense(32, activation="relu", input_dim=num_protocols + 1),
-        layers.Dense(64, activation="relu"),
+        layers.Dense(64, activation="relu", input_dim=num_protocols + num_features),
+        layers.Dense(128, activation="relu"),
         layers.Dense(1, activation='sigmoid')
     ])
     return model
 
 num_protocols = len(protocols)
-generator = build_generator(latent_dim, num_protocols)
-discriminator = build_discriminator(num_protocols)
+num_features = gan_input_data.shape[1] - num_protocols  # The remaining columns after one-hot encoding of protocols
+generator = build_generator(latent_dim, num_protocols, num_features)
+discriminator = build_discriminator(num_protocols, num_features)
 
 # Compile the discriminator
 discriminator.compile(loss='binary_crossentropy', optimizer=keras.optimizers.Adam(learning_rate=0.0002, beta_1=0.5))
@@ -103,9 +105,9 @@ for epoch in range(10000):
 if not os.path.exists('trained_models'):
     os.makedirs('trained_models')
 
-generator.save(r'G:\sem8\Capstone\Data\Trained_model\trained_models/generator_model.h5')
-discriminator.save(r'G:\sem8\Capstone\Data\Trained_model\trained_models/discriminator_model.h5')
-gan.save(r'G:\sem8\Capstone\Data\Trained_model\trained_models/gan_model.h5')
+generator.save(r'G:\sem8\Capstone\Codes\git repo\sentinelAI\backend\Trained model/generator_model.h5')
+discriminator.save(r'G:\sem8\Capstone\Codes\git repo\sentinelAI\backend\Trained model/discriminator_model.h5')
+gan.save(r'G:\sem8\Capstone\Codes\git repo\sentinelAI\backend\Trained model/gan_model.h5')
 
 # Generate synthetic data
 synthetic_data_count = 100
@@ -117,13 +119,13 @@ synthetic_data_df = pd.DataFrame(synthetic_data)
 
 # Extract one-hot encoded protocol columns (make sure to map to corresponding protocol names)
 protocol_column_names = list(encoder.categories_[0])  # This holds the unique protocol categories used for encoding
-all_column_names = protocol_column_names + ['Length']
+all_column_names = protocol_column_names + [f"Feature_{i}" for i in range(1, num_features + 1)] + ['Length']
 
 # Name columns of synthetic data
 synthetic_data_df.columns = all_column_names
 
 # Save synthetic data to CSV
-synthetic_data_df.to_csv(r'G:\sem8\Capstone\Data\Synthetic data\synthetic_network_data.csv', index=False)
+synthetic_data_df.to_csv(r'G:\sem8\Capstone\Codes\git repo\sentinelAI\backend\Data\generated data\synthetic_network_data.csv', index=False)
 
 # Check the synthetic data output
 print(synthetic_data_df.head())
