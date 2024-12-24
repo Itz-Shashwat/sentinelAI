@@ -1,131 +1,126 @@
 import pandas as pd
 import numpy as np
 import tensorflow as tf
-from tensorflow import keras
-from tensorflow.keras import layers
-from sklearn.preprocessing import OneHotEncoder, LabelEncoder, MinMaxScaler
-import concurrent.futures
+from tensorflow.keras import layers, models, optimizers
 import os
+import matplotlib.pyplot as plt
 
-data = pd.read_csv(r'G:\sem8\Capstone\Codes\git repo\sentinelAI\backend\Data\normal data\normalized_network_data.csv')
 
-# Encode 'Protocol' as integers
-le = LabelEncoder()
-data['ProtocolEncoded'] = le.fit_transform(data['Protocol'])
-protocols = data['Protocol'].unique()
+generator_model_path = r'G:\sem8\Capstone\Codes\git repo\sentinelAI\backend\Trained model\generator_model.h5'
+discriminator_model_path = r'G:\sem8\Capstone\Codes\git repo\sentinelAI\backend\Trained model\discriminator_model.h5'
+gan_model_path = r'G:\sem8\Capstone\Codes\git repo\sentinelAI\backend\Trained model\gan_model.h5'
+csv_file_path = r'G:\sem8\Capstone\Codes\git repo\sentinelAI\backend\Data\normal data\processed_data.csv'
+output_csv_path = r'G:\sem8\Capstone\Codes\git repo\sentinelAI\backend\Data\generated data\synthetic_network_data.csv'
 
-# One-hot encode 'Protocol'
-encoder = OneHotEncoder(sparse=False)
-protocol_ohe = encoder.fit_transform(data['ProtocolEncoded'].values.reshape(-1, 1))
 
-# Normalize 'Length' and other features
-scaler = MinMaxScaler(feature_range=(-1, 1))
-scaled_data = scaler.fit_transform(data.drop(['Protocol', 'ProtocolEncoded'], axis=1))  # Exclude 'Protocol' and 'ProtocolEncoded' columns from scaling
 
-# Combine the one-hot encoded protocol data with the scaled features
-scaled_data = np.concatenate((protocol_ohe, scaled_data), axis=1)
+# Load and preprocess data
+def load_data(csv_file_path):
+    # Load data
+    df = pd.read_csv(csv_file_path)
 
-# Set up input data for GAN
-gan_input_data = scaled_data
+    # Normalize all columns except 'Normalized_Length' which is already normalized
+    features = df.drop(columns=['Normalized_Length'])
 
-latent_dim = 50
+    # Normalize the data between -1 and 1
+    normalized_data = (features - features.min()) / (features.max() - features.min()) * 2 - 1
+    normalized_data['Normalized_Length'] = df['Normalized_Length']  # Keep normalized length intact
 
-def build_generator(latent_dim, num_protocols, num_features):
-    model = keras.Sequential([
-        layers.Dense(128, activation="relu", input_dim=latent_dim),
-        layers.Dense(64, activation="relu"),
-        layers.Dense(num_protocols + num_features, activation='tanh')  # Output includes num_protocols + other features
-    ])
+    return normalized_data
+
+# Define Generator
+def build_generator(latent_dim, input_shape):
+    model = models.Sequential()
+    model.add(layers.Dense(256, input_dim=latent_dim, activation='relu'))
+    model.add(layers.BatchNormalization())
+    model.add(layers.Dense(512, activation='relu'))
+    model.add(layers.BatchNormalization())
+    model.add(layers.Dense(1024, activation='relu'))
+    model.add(layers.BatchNormalization())
+    model.add(layers.Dense(input_shape, activation='tanh'))
     return model
 
-def build_discriminator(num_protocols, num_features):
-    model = keras.Sequential([
-        layers.Dense(64, activation="relu", input_dim=num_protocols + num_features),
-        layers.Dense(128, activation="relu"),
-        layers.Dense(1, activation='sigmoid')
-    ])
+# Define Discriminator
+def build_discriminator(input_shape):
+    model = models.Sequential()
+    model.add(layers.Dense(1024, input_dim=input_shape, activation='relu'))
+    model.add(layers.Dense(512, activation='relu'))
+    model.add(layers.Dense(256, activation='relu'))
+    model.add(layers.Dense(1, activation='sigmoid'))  # Binary output: real or fake
     return model
 
-num_protocols = len(protocols)
-num_features = gan_input_data.shape[1] - num_protocols  # The remaining columns after one-hot encoding of protocols
-generator = build_generator(latent_dim, num_protocols, num_features)
-discriminator = build_discriminator(num_protocols, num_features)
+# Combine the generator and discriminator into a GAN
+def build_gan(generator, discriminator):
+    model = models.Sequential()
+    model.add(generator)
+    discriminator.trainable = False  # During GAN training, freeze discriminator
+    model.add(discriminator)
+    return model
 
-# Compile the discriminator
-discriminator.compile(loss='binary_crossentropy', optimizer=keras.optimizers.Adam(learning_rate=0.0002, beta_1=0.5))
+# Save the model (Generator, Discriminator, GAN) to disk
+def save_model(model, model_name):
+    model.save(model_name)
+    print(f"{model_name} saved!")
 
-# Create the GAN model
-z = layers.Input(shape=(latent_dim,))
-img = generator(z)
-discriminator.trainable = False
-validity = discriminator(img)
-gan = keras.Model(z, validity)
-gan.compile(loss='binary_crossentropy', optimizer=keras.optimizers.Adam(learning_rate=0.0002, beta_1=0.5))
-
-# **Train GAN**
-batch_size = 32
-valid = np.ones((batch_size, 1))
-fake = np.zeros((batch_size, 1))
-
-# Function for fetching real data in parallel using ThreadPoolExecutor
-def get_real_batch(batch_size):
-    idx = np.random.randint(0, gan_input_data.shape[0], batch_size)
-    real_data = gan_input_data[idx]
-    return real_data
-
-# Function to train the GAN, using parallel data generation
-def train_gan(epoch, batch_size):
-    noise = np.random.normal(0, 1, (batch_size, latent_dim))
+# Function to train GAN
+def train_gan(data, epochs, batch_size, latent_dim=100):
+    generator = build_generator(latent_dim, data.shape[1])
+    discriminator = build_discriminator(data.shape[1])
+    gan = build_gan(generator, discriminator)
     
-    with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
-        future_real_data = executor.submit(get_real_batch, batch_size)
-        future_gen_data = executor.submit(generator.predict, noise)
+    generator.compile(loss='binary_crossentropy', optimizer=optimizers.Adam(0.0002, 0.5))
+    discriminator.compile(loss='binary_crossentropy', optimizer=optimizers.Adam(0.0002, 0.5))
+    gan.compile(loss='binary_crossentropy', optimizer=optimizers.Adam(0.0002, 0.5))
+    
+    for epoch in range(epochs):
+        # Train discriminator
+        idx = np.random.randint(0, data.shape[0], batch_size)
+        real_data = data.iloc[idx].to_numpy()
+
+        # Generate fake data
+        noise = np.random.normal(0, 1, (batch_size, latent_dim))
+        fake_data = generator.predict(noise)
         
-        real_data = future_real_data.result()
-        gen_data = future_gen_data.result()
+        # Labels for real and fake data
+        real_labels = np.ones((batch_size, 1))  # Shape must match discriminator output
+        fake_labels = np.zeros((batch_size, 1))  # Shape must match discriminator output
+        
+        # Train discriminator on real and fake data
+        d_loss_real = discriminator.train_on_batch(real_data, real_labels)
+        d_loss_fake = discriminator.train_on_batch(fake_data, fake_labels)
+        
+        # Train generator
+        noise = np.random.normal(0, 1, (batch_size, latent_dim))
+        valid_labels = np.ones((batch_size, 1))  # Trick discriminator into believing generated data is real
+        g_loss = gan.train_on_batch(noise, valid_labels)
 
-    # Train discriminator with real and fake data
-    d_loss_real = discriminator.train_on_batch(real_data, valid)
-    d_loss_fake = discriminator.train_on_batch(gen_data, fake)
-    d_loss = 0.5 * np.add(d_loss_real, d_loss_fake)
-    
-    # Train generator
-    g_loss = gan.train_on_batch(noise, valid)
+        if epoch % 1000 == 0:  # Adjust log interval as needed
+            print(f"Epoch {epoch}/{epochs}, D Loss Real: {d_loss_real}, D Loss Fake: {d_loss_fake}, G Loss: {g_loss}")
 
-    return d_loss, g_loss
+    return generator, discriminator, gan
 
-# Training loop
-for epoch in range(10000):
-    d_loss, g_loss = train_gan(epoch, batch_size)
 
-    if epoch % 100 == 0:
-        print(f"Epoch {epoch+1}, D loss: {d_loss}, G loss: {g_loss}")
+# Function to generate decoy data using the trained GAN
+def generate_decoy_data(generator, latent_dim=100, num_samples=100):
+    noise = np.random.randn(num_samples, latent_dim)
+    decoy_data = generator.predict(noise)
+    return decoy_data
 
-# Save models after training
-if not os.path.exists('trained_models'):
-    os.makedirs('trained_models')
+# Path to the CSV file containing network traffic data (update the path)
 
-generator.save(r'G:\sem8\Capstone\Codes\git repo\sentinelAI\backend\Trained model/generator_model.h5')
-discriminator.save(r'G:\sem8\Capstone\Codes\git repo\sentinelAI\backend\Trained model/discriminator_model.h5')
-gan.save(r'G:\sem8\Capstone\Codes\git repo\sentinelAI\backend\Trained model/gan_model.h5')
 
-# Generate synthetic data
-synthetic_data_count = 100
-noise = np.random.normal(0, 1, (synthetic_data_count, latent_dim))
-synthetic_data = generator.predict(noise)
+# Load data from CSV file
+data = load_data(csv_file_path)
 
-# Reconstruct DataFrame from synthetic data
-synthetic_data_df = pd.DataFrame(synthetic_data)
+# Train the GAN model on the data and get the trained generator, discriminator, and GAN
+trained_generator, trained_discriminator, trained_gan = train_gan(data, epochs=10000, batch_size=64)
 
-# Extract one-hot encoded protocol columns (make sure to map to corresponding protocol names)
-protocol_column_names = list(encoder.categories_[0])  # This holds the unique protocol categories used for encoding
-all_column_names = protocol_column_names + [f"Feature_{i}" for i in range(1, num_features + 1)] + ['Length']
+# Generate decoy data using the trained generator
+decoy_data = generate_decoy_data(trained_generator, latent_dim=100, num_samples=10)
 
-# Name columns of synthetic data
-synthetic_data_df.columns = all_column_names
+# Convert decoy data to DataFrame and print
+decoy_df = pd.DataFrame(decoy_data, columns=data.columns)
+print(decoy_df.head())
 
-# Save synthetic data to CSV
-synthetic_data_df.to_csv(r'G:\sem8\Capstone\Codes\git repo\sentinelAI\backend\Data\generated data\synthetic_network_data.csv', index=False)
-
-# Check the synthetic data output
-print(synthetic_data_df.head())
+# Optionally, save the generated decoy data to a CSV file
+decoy_df.to_csv(output_csv_path, index=False)

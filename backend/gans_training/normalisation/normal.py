@@ -1,25 +1,38 @@
 import pandas as pd
 import numpy as np
-from sklearn.preprocessing import OneHotEncoder, LabelEncoder, MinMaxScaler
+from sklearn.preprocessing import MinMaxScaler, OneHotEncoder
+import threading
 
-data = pd.read_csv(r'G:\sem8\Capstone\Codes\git repo\sentinelAI\backend\Data\raw data\filtered_data.csv')
+# latest
+def preprocess_data_from_csv(csv_file_path):
+    df = pd.read_csv(csv_file_path)
 
-le = LabelEncoder()
-data['ProtocolEncoded'] = le.fit_transform(data['Protocol'])
-protocols = data['Protocol'].unique()
+    scaler = MinMaxScaler(feature_range=(-1, 1))
+    df['Normalized_Length'] = scaler.fit_transform(df[['Length']])
+    
+    encoder = OneHotEncoder(sparse_output=False)  
+    protocol_encoded = encoder.fit_transform(df[['Protocol']])
+    protocol_columns = encoder.categories_[0]
+    
+    protocol_df = pd.DataFrame(protocol_encoded, columns=protocol_columns)
+    df_normalized = pd.concat([df[['Source', 'Destination']], df[['Normalized_Length']], protocol_df], axis=1)
+    
+    columns_to_drop = ['Source', 'Destination', 'Protocol']
+    df_normalized = df_normalized.drop(columns=[col for col in columns_to_drop if col in df_normalized.columns])
 
-encoder = OneHotEncoder()
-protocol_ohe = encoder.fit_transform(data['ProtocolEncoded'].values.reshape(-1, 1))
-protocol_ohe = protocol_ohe.toarray()
+    return df_normalized
 
-scaler = MinMaxScaler(feature_range=(-1, 1))
-data['Length'] = scaler.fit_transform(data[['Length']])
+def thread_preprocess(csv_file_path, output_file_path):
+    global processed_data
+    processed_data = preprocess_data_from_csv(csv_file_path)
+    
+    processed_data.to_csv(output_file_path, index=False)
 
-data = data.drop(columns=['Source', 'Destination', 'Protocol'])
+csv_file_path = 'G:\\sem8\\Capstone\\Codes\\git repo\\sentinelAI\\backend\\Data\\raw data\\filtered_data.csv'
+output_file_path = 'G:\\sem8\\Capstone\\Codes\\git repo\\sentinelAI\\backend\\Data\\normal data\\processed_data.csv'  # Output file path
 
-final_data = np.concatenate((protocol_ohe, data[['Length']].values), axis=1)
+preprocess_thread = threading.Thread(target=thread_preprocess, args=(csv_file_path, output_file_path))
+preprocess_thread.start()
+preprocess_thread.join()  
 
-normalized_data = pd.DataFrame(final_data)
-normalized_data.to_csv(r'G:\sem8\Capstone\Codes\git repo\sentinelAI\backend\Data\normal data\normalized_network_data.csv', index=False)
-
-print(normalized_data.head())
+print(processed_data.head())
