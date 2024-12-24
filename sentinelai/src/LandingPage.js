@@ -54,7 +54,7 @@ function LandingPage() {
   return (
     <div style={wrapperStyle}>
       <header style={headerStyle}>
-        <h1 style={logoStyle}>Welcome to SentinelAI</h1>
+        <h1 style={logoStyle}>SentinelAI</h1>
         <nav>
           <ul style={navListStyle}>
             <li><a href="#home" style={navLinkStyle}>Home</a></li>
@@ -74,20 +74,16 @@ function LandingPage() {
       </header>
       <main>
         <section id="home" style={sectionStyle}>
-          <h2>Home</h2>
-          <p>This is the home section.</p>
+
         </section>
         <section id="about" style={sectionStyle}>
-          <h2>About Us</h2>
-          <p>Learn more about what we do.</p>
+
         </section>
         <section id="services" style={sectionStyle}>
-          <h2>Our Services</h2>
-          <p>Discover our offerings.</p>
+
         </section>
         <section id="contact" style={sectionStyle}>
-          <h2>Contact Us</h2>
-          <p>Reach out for more information.</p>
+
         </section>
       </main>
       <footer style={footerStyle}>
