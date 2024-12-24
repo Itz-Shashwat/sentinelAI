@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #000; 
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+  }
+  
+  .header .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-bar a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .signup-btn {
+    background-color: #fff;
+    border: none;
+    padding: 10px 20px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #000; /* Matching background */
+  }
+  
+  .hero-text .tagline {
+    color: gray;
+    font-size: 14px;
+  }
+  
+  .hero-text .main-title {
+    font-size: 48px;
+    margin: 10px 0;
+  }
+  
+  .hero-text .description {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .try-btn, .learn-btn {
+    background-color: #fff;
+    border: none;
+    padding: 10px 20px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
