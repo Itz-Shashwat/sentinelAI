@@ -1,5 +1,5 @@
 import React from "react";
-
+import GANOperationsDashboard from './GANOperationsDashboard';
 function LandingPage() {
   const wrapperStyle = {
     margin: 0,
@@ -74,17 +74,9 @@ function LandingPage() {
       </header>
       <main>
         <section id="home" style={sectionStyle}>
-
         </section>
-        <section id="about" style={sectionStyle}>
-
-        </section>
-        <section id="services" style={sectionStyle}>
-
-        </section>
-        <section id="contact" style={sectionStyle}>
-
-        </section>
+        <GANOperationsDashboard/>
+        
       </main>
       <footer style={footerStyle}>
         <p>© 2024 SentinelAI. All rights reserved.</p>

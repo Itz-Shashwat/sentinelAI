@@ -1,5 +1,8 @@
 {
   "dependencies": {
+    "chart.js": "^4.4.7",
+    "react-chartjs-2": "^5.2.0",
+    "react-router-dom": "^7.1.1",
     "web-vitals": "^4.2.4"
   }
 }
