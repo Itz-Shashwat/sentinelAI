@@ -1,86 +1,66 @@
-import React from "react";
+import React from 'react';
+import { Route, Routes, Link } from 'react-router-dom';
 import GANOperationsDashboard from './GANOperationsDashboard';
 function LandingPage() {
   const wrapperStyle = {
     margin: 0,
-    fontFamily: "Arial, sans-serif",
+    fontFamily: "'Poppins', sans-serif",
     color: "white",
-    backgroundColor: "#000",
+    backgroundColor: "#121212",
+    display: "flex"
   };
 
   const headerStyle = {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: "20px",
-    backgroundColor: "#333",
-  };
-
-  const logoStyle = {
-    fontSize: "24px",
-    fontWeight: "bold",
-  };
-
-  const navListStyle = {
-    listStyle: "none",
-    display: "flex",
-    gap: "15px",
-  };
-
-  const navLinkStyle = {
-    textDecoration: "none",
-    color: "white",
-    fontSize: "16px",
-  };
-
-  const buttonStyle = {
-    background: "none",
-    border: "none",
-    color: "blue",
-    textDecoration: "underline",
-    cursor: "pointer",
-  };
-
-  const sectionStyle = {
-    margin: "20px",
+    textAlign: "center",
+    marginBottom: "20px",
+    animation: "fadeIn 1s ease"
   };
 
   const footerStyle = {
-    padding: "20px",
     textAlign: "center",
-    backgroundColor: "#333",
+    marginTop: "30px",
+    fontSize: "0.9rem",
+    color: "#bbbbbb",
+    animation: "slideUp 1s ease"
+  };
+
+  const aboutSectionStyle = {
+    background: "linear-gradient(rgba(18, 18, 18, 0.7), rgba(18, 18, 18, 0.7)), url('images/gan.jpg') no-repeat center center/cover",
+    position: "relative",
+    padding: "40px",
+    borderRadius: "10px",
+    overflow: "hidden",
+    boxShadow: "0 4px 15px rgba(0, 0, 0, 0.5)"
   };
 
   return (
     <div style={wrapperStyle}>
-      <header style={headerStyle}>
-        <h1 style={logoStyle}>SentinelAI</h1>
-        <nav>
-          <ul style={navListStyle}>
-            <li><a href="#home" style={navLinkStyle}>Home</a></li>
-            <li><a href="#about" style={navLinkStyle}>About</a></li>
-            <li><a href="#services" style={navLinkStyle}>Services</a></li>
-            <li><a href="#contact" style={navLinkStyle}>Contact</a></li>
-            <li>
-              <button 
-                onClick={() => alert('Feature coming soon!')} 
-                style={buttonStyle}
-              >
-                Future Feature
-              </button>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <section id="home" style={sectionStyle}>
-        </section>
+      {/* Sidebar */}
+      <div style={{ width: "250px", backgroundColor: "#1f1f2e", padding: "20px", position: "fixed", height: "100vh" }}>
+        <h2 style={{ color: "#bb86fc", textAlign: "center", fontWeight: "600" }}>GAN Dashboard</h2>
+        <ul style={{ listStyle: "none", padding: 0 }}>
+          <li><Link to="/" style={{ color: "white", display: "block", padding: "10px", textDecoration: "none" }}>Home</Link></li>
+          <li><Link to="/about" style={{ color: "white", display: "block", padding: "10px", textDecoration: "none" }}>About</Link></li>
+          <li><Link to="/overview" style={{ color: "white", display: "block", padding: "10px", textDecoration: "none" }}>Synthetic Data</Link></li>
+          <li><Link to="/settings" style={{ color: "white", display: "block", padding: "10px", textDecoration: "none" }}>Settings</Link></li>
+        </ul>
+      </div>
+
+      {/* Main content area */}
+      <div style={{ marginLeft: "270px", padding: "22px", flex: 1 }}>
+        {/* Header */}
+        <div style={headerStyle}>
+          {/* Change color of sentinel*/}
+          <h1 style={{ fontSize: "2.5rem", color: "#bb86fc" }}>SentinelAI</h1>
+        </div>
+        <section>
         <GANOperationsDashboard/>
-        
-      </main>
-      <footer style={footerStyle}>
-        <p>© 2024 SentinelAI. All rights reserved.</p>
-      </footer>
+        </section>
+        {/* Footer */}
+        <footer style={footerStyle}>
+          <p>© 2024 SentinelAI. All rights reserved.</p>
+        </footer>
+      </div>
     </div>
   );
 }

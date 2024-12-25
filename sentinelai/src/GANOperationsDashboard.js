@@ -5,7 +5,7 @@ import Chart from "chart.js/auto";
 const GANOperationsDashboard = () => {
   // Example state
   const [ganStats, setGanStats] = useState({
-    epoch: 10,
+    epoch: 10000,
     trainingStatus: "Training",
     generatorLoss: [0.9, 0.8, 0.7, 0.6, 0.4],
     discriminatorLoss: [0.5, 0.4, 0.6, 0.3, 0.2],
@@ -28,7 +28,7 @@ const GANOperationsDashboard = () => {
 
   // Line Chart for losses
   const lossData = {
-    labels: ["Epoch 1", "Epoch 2", "Epoch 3", "Epoch 4", "Epoch 5"],
+    labels: ["Epoch 1000", "Epoch 2000", "Epoch 3000", "Epoch 4000", "Epoch 5000"],
     datasets: [
       {
         label: "Generator Loss",
@@ -47,6 +47,47 @@ const GANOperationsDashboard = () => {
     ],
   };
 
+  const [lineChartData, setLineChartData] = useState({
+    labels: ["January", "February", "March", "April", "May", "June", "July"],
+    datasets: [
+      {
+        label: "Real Data",
+        data: [65, 59, 80, 81, 56, 55, 40],
+        borderColor: "#bb86fc",
+        backgroundColor: "rgba(187, 134, 252, 0.2)",
+        fill: true,
+      },
+      {
+        label: "Generated Data",
+        data: [28, 48, 40, 19, 86, 27, 90],
+        borderColor: "#40E0D0",
+        backgroundColor: "rgba(55, 0, 179, 0.2)",
+        fill: true,
+      },
+    ],
+  });
+
+
+  const lineChartOptions = {
+    responsive: true,
+    plugins: {
+      legend: {
+        labels: {
+          color: "#ffffff",
+        },
+      },
+    },
+    scales: {
+      x: {
+        ticks: { color: "#ffffff" },
+        grid: { color: "#3c3c54" },
+      },
+      y: {
+        ticks: { color: "#ffffff" },
+        grid: { color: "#3c3c54" },
+      },
+    },
+  };
   // Bar Chart for protocol frequencies
   const protocolData = {
     labels: ["Real", "Generated"],
@@ -109,8 +150,8 @@ const GANOperationsDashboard = () => {
 
       {/* Data Comparison */}
       <div style={styles.section}>
-        <h2 style={styles.heading}>Real vs Generated Data</h2>
-        <Bar data={protocolData} />
+        <h2 style={styles.heading}>Real vs Generated Data (Line Chart)</h2>
+        <Line data={lineChartData} options={lineChartOptions} />
       </div>
 
       {/* Tabular Data */}
