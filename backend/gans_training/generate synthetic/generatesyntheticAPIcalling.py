@@ -1,4 +1,3 @@
-import os
 import random
 import re
 from flask import Flask, request, send_file
@@ -8,20 +7,16 @@ import numpy as np
 import tensorflow as tf
 from io import BytesIO
 
-from sklearn.preprocessing import MinMaxScaler, OneHotEncoder
-
 app = Flask(__name__)
 CORS(app)
 
-# Model path
-generator_model_path = os.path.join(os.path.dirname(__file__), 'backend', 'Trained_model', 'generator_model.h5')
-if not os.path.exists(generator_model_path):
-    raise FileNotFoundError(f"Model file not found at {generator_model_path}")
-
+# Path to the generator model
+generator_model_path = "./backend/Trained_model/generator_model.h5"
 generator = tf.keras.models.load_model(generator_model_path)
+
 latent_dim = 100
-protocols = ['BJNP', 'BROWSER', 'CAPWAP-Control', 'DNS', 'HTTP', 'ICMP', 'IGMPv1', 'IGMPv2', 'IPP', 'IPv4',
-             'MDNS', 'NBNS', 'QUIC', 'SSL', 'TCP', 'TLSv1.2', 'TLSv1.3', 'UDP']
+protocols = ['BJNP', 'BROWSER', 'CAPWAP-Control', 'DNS', 'HTTP', 'ICMP', 'IGMPv1', 'IGMPv2', 'IPP', 
+             'IPv4', 'MDNS', 'NBNS', 'QUIC', 'SSL', 'TCP', 'TLSv1.2', 'TLSv1.3', 'UDP']
 
 min_length = 71
 max_length = 477
@@ -72,6 +67,4 @@ def generate_data():
         return {'error': 'An error occurred while generating the data'}, 500
 
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5000))
-    debug_mode = bool(os.environ.get('FLASK_DEBUG', False))
-    app.run(debug=debug_mode, host='0.0.0.0', port=port)
+    app.run()
