@@ -12,15 +12,11 @@ from sklearn.preprocessing import MinMaxScaler, OneHotEncoder
 
 app = Flask(__name__)
 CORS(app)
-<<<<<<< HEAD
 
 # Model path
 generator_model_path = os.path.join(os.path.dirname(__file__), 'backend', 'Trained_model', 'generator_model.h5')
 if not os.path.exists(generator_model_path):
     raise FileNotFoundError(f"Model file not found at {generator_model_path}")
-=======
-generator_model_path = "./backend/Trained_model/generator_model.h5"
->>>>>>> 224521eaafa79cc13797ad79b17650fec5248236
 
 generator = tf.keras.models.load_model(generator_model_path)
 latent_dim = 100
