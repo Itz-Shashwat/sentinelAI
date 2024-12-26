@@ -10,7 +10,7 @@ from sklearn.preprocessing import MinMaxScaler, OneHotEncoder
 
 app = Flask(__name__)
 CORS(app)
-generator_model_path = r'G:\sem8\Capstone\Codes\git repo\sentinelAI\backend\Trained model\generator_model.h5'
+generator_model_path = ".backend\Trained model\generator_model.h5"
 generator = tf.keras.models.load_model(generator_model_path)
 latent_dim = 100
 protocols = ['BJNP', 'BROWSER', 'CAPWAP-Control', 'DNS', 'HTTP', 'ICMP', 'IGMPv1', 'IGMPv2', 'IPP', 'IPv4', 'MDNS', 'NBNS', 'QUIC', 'SSL', 'TCP', 'TLSv1.2', 'TLSv1.3', 'UDP']
