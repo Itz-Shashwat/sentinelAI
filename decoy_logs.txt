@@ -1,0 +1,732 @@
+2024-12-27 11:00:58,938 - Listening for outgoing packets on eth0...
+2024-12-27 11:00:58,939 - Error during sniffing: Error opening adapter: The filename, directory name, or volume label syntax is incorrect.  (123)
+2024-12-27 11:01:10,673 - Listening for outgoing packets on eth0...
+2024-12-27 11:01:10,673 - Error during sniffing: Error opening adapter: The filename, directory name, or volume label syntax is incorrect.  (123)
+2024-12-27 11:03:20,352 - Listening for outgoing packets on Wi-Fi...
+2024-12-27 11:03:20,390 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:20,390 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:20,391 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:20,392 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:20,392 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:20,393 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:20,546 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:20,646 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:20,689 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:20,747 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:20,850 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:21,366 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:21,368 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:21,624 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:21,855 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:21,855 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:21,856 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:21,867 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:21,881 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:21,985 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:22,064 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:22,065 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:22,087 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:22,190 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:22,191 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:22,286 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:22,288 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:22,288 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:22,289 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:22,289 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:22,290 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:22,290 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:22,392 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:22,393 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:22,464 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:22,465 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:22,466 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:22,468 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:22,500 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:22,501 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:22,523 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:22,600 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:22,601 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:22,601 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:22,602 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:22,602 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:22,706 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:22,794 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,015 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,223 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,550 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,600 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,634 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,635 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,738 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,739 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,821 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,855 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,856 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,856 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,857 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,858 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,864 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,866 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,870 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,871 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,872 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,872 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,876 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,877 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,878 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,878 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,879 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,897 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,898 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,898 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,899 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,901 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,902 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,921 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,922 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,927 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,928 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,928 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,929 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,933 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,933 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,943 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,945 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,946 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,985 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,986 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:23,987 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,048 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,049 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,113 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,114 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,115 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,115 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,116 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,117 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,149 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,150 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,150 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,151 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,151 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,152 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,152 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,160 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,161 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,177 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,207 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,207 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,208 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,209 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,252 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,253 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,254 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,270 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,277 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,278 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,458 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,460 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,460 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,461 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,767 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,768 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,769 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:24,975 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:25,077 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:25,278 - Error loading CSV file: [Errno 2] No such file or directory: 'decoy_config.csv'
+2024-12-27 11:03:52,055 - Listening for outgoing packets on Wi-Fi...
+2024-12-27 11:03:52,270 - Original Packet Observed: Ether / IP / TCP 52.182.143.208:https > 172.26.226.72:29511 A / Padding
+2024-12-27 11:03:54,284 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:03:54,291 - Sent Decoy Packet: 103.103.208.67 > 111.179.176.180 ip
+2024-12-27 11:03:56,729 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:03:56,731 - Sent Decoy Packet: 103.103.208.67 > 7.252.223.207 ip
+2024-12-27 11:03:58,988 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:03:58,991 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 43.221.28.112:48016 / Raw
+2024-12-27 11:04:01,127 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:04:01,129 - Sent Decoy Packet: 103.103.208.67 > 68.169.204.91 ip
+2024-12-27 11:04:03,519 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:04:03,521 - Sent Decoy Packet: 103.103.208.67 > 65.103.183.93 ip
+2024-12-27 11:04:03,866 - Original Packet Observed: Ether / IP / TCP 52.182.143.208:https > 172.26.226.72:29511 PA / Raw
+2024-12-27 11:04:05,873 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:04:05,876 - Sent Decoy Packet: 103.103.208.67 > 153.82.123.188 ip
+2024-12-27 11:04:05,991 - Sent Decoy Packet: 103.103.208.67 > 224.51.253.109 ip
+2024-12-27 11:04:08,245 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:04:08,247 - Sent Decoy Packet: 103.103.208.67 > 103.2.68.67 ip
+2024-12-27 11:04:10,674 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:04:10,676 - Sent Decoy Packet: 103.103.208.67 > 132.153.97.133 ip
+2024-12-27 11:04:12,964 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:04:12,966 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 124.48.218.18:33035 / Raw
+2024-12-27 11:04:13,447 - Original Packet Observed: Ether / IP / TCP 172.26.226.72:29511 > 52.182.143.208:https A
+2024-12-27 11:04:15,463 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:04:15,465 - Sent Decoy Packet: 103.103.208.67 > 66.186.26.138 ip
+2024-12-27 11:04:15,822 - Sent Decoy Packet: 103.103.208.67 > 229.71.158.128 ip
+2024-12-27 11:04:18,074 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:04:18,077 - Sent Decoy Packet: 103.103.208.67 > 88.240.44.150 ip
+2024-12-27 11:04:20,370 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:04:20,373 - Sent Decoy Packet: 103.103.208.67 > 7.252.223.207 ip
+2024-12-27 11:04:22,610 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:04:22,612 - Sent Decoy Packet: 103.103.208.67 > 78.19.95.18 ip
+2024-12-27 11:04:22,830 - Original Packet Observed: Ether / IP / TCP 52.182.143.208:https > 172.26.226.72:29511 FPA / Raw
+2024-12-27 11:04:24,840 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:04:24,842 - Sent Decoy Packet: 103.103.208.67 > 164.248.58.220 ip
+2024-12-27 11:04:27,260 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:04:27,262 - Sent Decoy Packet: 103.103.208.67 > 126.96.208.189 ip
+2024-12-27 11:04:29,585 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:04:29,588 - Sent Decoy Packet: 103.103.208.67 > 63.55.254.87 ip
+2024-12-27 11:04:31,808 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:04:31,811 - Sent Decoy Packet: 103.103.208.67 > 66.186.26.138 ip
+2024-12-27 11:04:34,295 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:04:34,298 - Sent Decoy Packet: 103.103.208.67 > 91.135.218.145 ip
+2024-12-27 11:04:34,430 - Original Packet Observed: Ether / IP / TCP 172.26.226.72:29511 > 52.182.143.208:https A
+2024-12-27 11:04:36,441 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:04:36,444 - Sent Decoy Packet: 103.103.208.67 > 171.230.66.72 ip
+2024-12-27 11:04:38,763 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:04:38,766 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 72.202.174.234:9034 / Raw
+2024-12-27 11:04:41,196 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:04:41,199 - Sent Decoy Packet: 103.103.208.67 > 103.2.68.67 ip
+2024-12-27 11:04:43,589 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:04:43,591 - Sent Decoy Packet: 103.103.208.67 > 153.82.123.188 ip
+2024-12-27 11:04:45,749 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:04:45,751 - Sent Decoy Packet: 103.103.208.67 > 112.7.40.184 ip
+2024-12-27 11:04:46,075 - Original Packet Observed: Ether / IP / TCP 172.26.226.72:29511 > 52.182.143.208:https PA / Raw
+2024-12-27 11:04:48,083 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:04:48,085 - Sent Decoy Packet: 103.103.208.67 > 26.150.218.237 ip
+2024-12-27 11:04:50,238 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:04:50,240 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 176.199.206.153:42695 / Raw
+2024-12-27 11:04:52,644 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:04:52,646 - Sent Decoy Packet: 103.103.208.67 > 162.32.25.164 ip
+2024-12-27 11:04:55,013 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:04:55,014 - Sent Decoy Packet: 103.103.208.67 > 65.28.13.238 ip
+2024-12-27 11:04:57,427 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:04:57,429 - Sent Decoy Packet: 103.103.208.67 > 126.211.84.223 ip
+2024-12-27 11:04:57,815 - Original Packet Observed: Ether / IP / TCP 172.26.226.72:29511 > 52.182.143.208:https FA
+2024-12-27 11:04:59,826 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:04:59,828 - Sent Decoy Packet: 103.103.208.67 > 35.43.169.160 ip
+2024-12-27 11:05:02,253 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:05:02,255 - Sent Decoy Packet: 103.103.208.67 > 111.179.176.180 ip
+2024-12-27 11:05:04,646 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:05:04,648 - Sent Decoy Packet: 103.103.208.67 > 52.238.183.58 ip
+2024-12-27 11:05:06,978 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:05:06,980 - Sent Decoy Packet: 103.103.208.67 > 203.38.117.249 ip
+2024-12-27 11:05:09,460 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:05:09,462 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 176.199.206.153:39813 / Raw
+2024-12-27 11:05:09,875 - Original Packet Observed: Ether / IP / UDP 172.26.226.58:50311 > 255.255.255.255:3289 / Raw
+2024-12-27 11:05:11,890 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:05:11,892 - Sent Decoy Packet: 103.103.208.67 > 128.233.18.120 ip
+2024-12-27 11:05:14,253 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:05:14,256 - Sent Decoy Packet: 103.103.208.67 > 128.233.18.120 ip
+2024-12-27 11:05:16,653 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:05:16,654 - Sent Decoy Packet: 103.103.208.67 > 40.194.154.90 ip
+2024-12-27 11:05:18,821 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:05:18,823 - Sent Decoy Packet: 103.103.208.67 > 174.239.88.137 ip
+2024-12-27 11:05:21,266 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:05:21,268 - Sent Decoy Packet: 103.103.208.67 > 91.135.218.145 ip
+2024-12-27 11:05:21,397 - Original Packet Observed: Ether / IP / UDP / DNS Qry "b'_meshcop._udp.local.'" 
+2024-12-27 11:05:23,401 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:05:23,403 - Sent Decoy Packet: 103.103.208.67 > 88.240.44.150 ip
+2024-12-27 11:05:25,608 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:05:25,612 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 113.172.23.40:45380 / Raw
+2024-12-27 11:05:28,090 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:05:28,092 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 65.247.46.208:42283 / Raw
+2024-12-27 11:05:30,208 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:05:30,211 - Sent Decoy Packet: 103.103.208.67 > 45.94.66.119 ip
+2024-12-27 11:05:32,580 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:05:32,583 - Sent Decoy Packet: 103.103.208.67 > 88.242.93.26 ip
+2024-12-27 11:05:32,871 - Original Packet Observed: Ether / IP / UDP / DNS Qry "b'EP06A0CB.local.'" 
+2024-12-27 11:05:34,876 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:05:34,878 - Sent Decoy Packet: 103.103.208.67 > 167.76.57.228 ip
+2024-12-27 11:05:37,184 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:05:37,187 - Sent Decoy Packet: 103.103.208.67 > 31.99.165.79 ip
+2024-12-27 11:05:39,376 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:05:39,379 - Sent Decoy Packet: 103.103.208.67 > 211.186.237.186 ip
+2024-12-27 11:05:41,738 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:05:41,741 - Sent Decoy Packet: 103.103.208.67 > 218.5.119.41 ip
+2024-12-27 11:05:44,007 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:05:44,009 - Sent Decoy Packet: 103.103.208.67 > 39.223.46.195 ip
+2024-12-27 11:05:44,446 - Original Packet Observed: Ether / IP / UDP 172.26.226.58:55452 > 224.0.0.252:llmnr / LLMNRQuery who has 'EP06A0CB.'
+2024-12-27 11:05:46,454 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:05:46,457 - Sent Decoy Packet: 103.103.208.67 > 122.153.113.75 ip
+2024-12-27 11:05:48,916 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:05:48,919 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 65.247.46.208:25478 / Raw
+2024-12-27 11:05:49,170 - Sent Decoy Packet: 103.103.208.67 > 233.202.104.192 ip
+2024-12-27 11:05:51,296 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:05:51,299 - Sent Decoy Packet: 103.103.208.67 > 64.11.108.89 ip
+2024-12-27 11:05:53,508 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:05:53,510 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 124.48.218.18:26940 / Raw
+2024-12-27 11:05:53,702 - Original Packet Observed: Ether / IP / TCP 52.182.143.208:https > 172.26.226.72:29511 A / Padding
+2024-12-27 11:05:55,717 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:05:55,720 - Sent Decoy Packet: 103.103.208.67 > 65.28.13.238 ip
+2024-12-27 11:05:58,149 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:05:58,151 - Sent Decoy Packet: 103.103.208.67 > 194.254.203.38 ip
+2024-12-27 11:06:00,657 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:06:00,659 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 136.197.216.7:51830 / Raw
+2024-12-27 11:06:02,944 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:06:02,947 - Sent Decoy Packet: 103.103.208.67 > 112.7.40.184 ip
+2024-12-27 11:06:05,293 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:06:05,296 - Sent Decoy Packet: 103.103.208.67 > 153.82.123.188 ip
+2024-12-27 11:06:05,745 - Original Packet Observed: Ether / IP / TCP 172.26.226.72:29330 > 20.189.173.24:https PA / Raw
+2024-12-27 11:06:07,762 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:06:07,764 - Sent Decoy Packet: 103.103.208.67 > 66.186.26.138 ip
+2024-12-27 11:06:10,103 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:06:10,105 - Sent Decoy Packet: 103.103.208.67 > 71.106.254.89 ip
+2024-12-27 11:06:12,489 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:06:12,492 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 32.247.178.97:39000 / Raw
+2024-12-27 11:06:14,842 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:06:14,844 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 136.197.216.7:23504 / Raw
+2024-12-27 11:06:14,982 - Sent Decoy Packet: 103.103.208.67 > 224.51.253.109 ip
+2024-12-27 11:06:15,193 - Original Packet Observed: Ether / IP / TCP 172.26.226.72:29330 > 20.189.173.24:https A / Raw
+2024-12-27 11:06:17,202 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:06:17,205 - Sent Decoy Packet: 103.103.208.67 > 167.76.57.228 ip
+2024-12-27 11:06:19,653 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:06:19,656 - Sent Decoy Packet: 103.103.208.67 > 158.64.245.62 ip
+2024-12-27 11:06:21,835 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:06:21,838 - Sent Decoy Packet: 103.103.208.67 > 250.117.41.150 ip
+2024-12-27 11:06:24,201 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:06:24,203 - Sent Decoy Packet: 103.103.208.67 > 39.223.46.195 ip
+2024-12-27 11:06:26,620 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:06:26,622 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 32.247.178.97:7688 / Raw
+2024-12-27 11:06:26,740 - Original Packet Observed: Ether / IP / TCP 172.26.226.72:29330 > 20.189.173.24:https A / Raw
+2024-12-27 11:06:28,745 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:06:28,748 - Sent Decoy Packet: 103.103.208.67 > 174.239.88.137 ip
+2024-12-27 11:06:30,900 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:06:30,902 - Sent Decoy Packet: 103.103.208.67 > 104.148.174.35 ip
+2024-12-27 11:06:33,087 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:06:33,088 - Sent Decoy Packet: 103.103.208.67 > 68.169.204.91 ip
+2024-12-27 11:06:35,552 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:06:35,554 - Sent Decoy Packet: 103.103.208.67 > 76.59.54.122 ip
+2024-12-27 11:06:35,866 - Sent Decoy Packet: 103.103.208.67 > 233.202.104.192 ip
+2024-12-27 11:06:36,353 - Original Packet Observed: Ether / IP / TCP 172.26.226.72:29330 > 20.189.173.24:https A / Raw
+2024-12-27 11:06:38,366 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:06:38,368 - Sent Decoy Packet: 103.103.208.67 > 26.113.221.199 ip
+2024-12-27 11:06:40,834 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:06:40,836 - Sent Decoy Packet: 103.103.208.67 > 54.133.203.92 ip
+2024-12-27 11:06:43,057 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:06:43,060 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 113.172.23.40:10822 / Raw
+2024-12-27 11:06:45,221 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:06:45,224 - Sent Decoy Packet: 103.103.208.67 > 184.132.7.208 ip
+2024-12-27 11:06:47,408 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:06:47,411 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 113.172.23.40:43109 / Raw
+2024-12-27 11:06:47,747 - Original Packet Observed: Ether / IP / TCP 172.26.226.72:29330 > 20.189.173.24:https PA / Raw
+2024-12-27 11:06:49,758 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:06:49,761 - Sent Decoy Packet: 103.103.208.67 > 194.254.203.38 ip
+2024-12-27 11:06:52,094 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:06:52,096 - Sent Decoy Packet: 103.103.208.67 > 52.238.183.58 ip
+2024-12-27 11:06:54,225 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:06:54,227 - Sent Decoy Packet: 103.103.208.67 > 218.208.244.35 ip
+2024-12-27 11:06:56,439 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:06:56,442 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 32.247.178.97:15003 / Raw
+2024-12-27 11:06:58,812 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:06:58,814 - Sent Decoy Packet: 103.103.208.67 > 43.210.200.208 ip
+2024-12-27 11:06:58,946 - Original Packet Observed: Ether / IP / UDP / NBNSHeader / NBNSQueryRequest who has '\\EP06A0CB'
+2024-12-27 11:07:00,957 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:07:00,959 - Sent Decoy Packet: 103.103.208.67 > 40.194.154.90 ip
+2024-12-27 11:07:03,451 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:07:03,453 - Sent Decoy Packet: 103.103.208.67 > 182.79.138.140 ip
+2024-12-27 11:07:05,595 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:07:05,597 - Sent Decoy Packet: 103.103.208.67 > 47.163.60.65 ip
+2024-12-27 11:07:07,884 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:07:07,886 - Sent Decoy Packet: 103.103.208.67 > 22.46.9.247 ip
+2024-12-27 11:07:10,248 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:07:10,251 - Sent Decoy Packet: 103.103.208.67 > 205.254.74.24 ip
+2024-12-27 11:07:10,494 - Original Packet Observed: Ether / IP / UDP 172.26.226.58:55452 > 224.0.0.252:llmnr / LLMNRQuery who has 'EP06A0CB.'
+2024-12-27 11:07:12,503 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:07:12,505 - Sent Decoy Packet: 103.103.208.67 > 211.186.237.186 ip
+2024-12-27 11:07:14,744 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:07:14,746 - Sent Decoy Packet: 103.103.208.67 > 253.83.197.252 ip
+2024-12-27 11:07:16,956 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:07:16,959 - Sent Decoy Packet: 103.103.208.67 > 68.169.204.91 ip
+2024-12-27 11:07:19,099 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:07:19,102 - Sent Decoy Packet: 103.103.208.67 > 88.240.44.150 ip
+2024-12-27 11:07:21,501 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:07:21,503 - Sent Decoy Packet: 103.103.208.67 > 107.89.231.48 ip
+2024-12-27 11:07:21,995 - Original Packet Observed: Ether / IP / TCP 20.189.173.24:https > 172.26.226.72:29330 A / Padding
+2024-12-27 11:07:24,011 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:07:24,013 - Sent Decoy Packet: 103.103.208.67 > 250.156.96.76 ip
+2024-12-27 11:07:26,285 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:07:26,287 - Sent Decoy Packet: 103.103.208.67 > 64.11.108.89 ip
+2024-12-27 11:07:28,486 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:07:28,488 - Sent Decoy Packet: 103.103.208.67 > 240.175.52.50 ip
+2024-12-27 11:07:28,884 - Sent Decoy Packet: 103.103.208.67 > 227.179.218.135 ip
+2024-12-27 11:07:29,245 - Sent Decoy Packet: 103.103.208.67 > 235.68.0.160 ip
+2024-12-27 11:07:29,731 - Original Packet Observed: Ether / IP / TCP 20.189.173.24:https > 172.26.226.72:29330 A / Padding
+2024-12-27 11:07:31,742 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:07:31,744 - Sent Decoy Packet: 103.103.208.67 > 22.46.9.247 ip
+2024-12-27 11:07:34,157 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:07:34,159 - Sent Decoy Packet: 103.103.208.67 > 132.153.97.133 ip
+2024-12-27 11:07:36,623 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:07:36,626 - Sent Decoy Packet: 103.103.208.67 > 164.248.58.220 ip
+2024-12-27 11:07:38,794 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:07:38,796 - Sent Decoy Packet: 103.103.208.67 > 95.120.248.214 ip
+2024-12-27 11:07:41,073 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:07:41,075 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 217.167.123.167:20690 / Raw
+2024-12-27 11:07:41,470 - Original Packet Observed: Ether / IP / UDP 172.26.226.72:43861 > 209.38.196.30:6883 / Raw
+2024-12-27 11:07:43,477 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:07:43,480 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 43.221.28.112:18230 / Raw
+2024-12-27 11:07:45,851 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:07:45,854 - Sent Decoy Packet: 103.103.208.67 > 180.204.125.1 ip
+2024-12-27 11:07:48,284 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:07:48,287 - Sent Decoy Packet: 103.103.208.67 > 76.59.54.122 ip
+2024-12-27 11:07:48,776 - Sent Decoy Packet: 103.103.208.67 > 226.114.151.74 ip
+2024-12-27 11:07:51,217 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:07:51,219 - Sent Decoy Packet: 103.103.208.67 > 194.52.89.2 ip
+2024-12-27 11:07:51,702 - Original Packet Observed: Ether / IP / TCP 172.26.226.72:29512 > 52.182.143.208:https S
+2024-12-27 11:07:53,719 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:07:53,721 - Sent Decoy Packet: 103.103.208.67 > 52.238.183.58 ip
+2024-12-27 11:07:55,893 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:07:55,895 - Sent Decoy Packet: 103.103.208.67 > 114.110.118.188 ip
+2024-12-27 11:07:58,029 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:07:58,031 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 65.247.46.208:42828 / Raw
+2024-12-27 11:08:00,446 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:08:00,448 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 33.246.156.33:41127 / Raw
+2024-12-27 11:08:02,899 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:08:02,902 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 72.202.174.234:29769 / Raw
+2024-12-27 11:08:03,271 - Original Packet Observed: Ether / IP / TCP 20.189.173.24:https > 172.26.226.72:29330 PA / Raw
+2024-12-27 11:08:05,276 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:08:05,278 - Sent Decoy Packet: 103.103.208.67 > 253.83.197.252 ip
+2024-12-27 11:08:05,696 - Sent Decoy Packet: 103.103.208.67 > 224.51.253.109 ip
+2024-12-27 11:08:07,917 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:08:07,920 - Sent Decoy Packet: 103.103.208.67 > 37.163.131.31 ip
+2024-12-27 11:08:10,053 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:08:10,056 - Sent Decoy Packet: 103.103.208.67 > 60.193.199.121 ip
+2024-12-27 11:08:12,186 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:08:12,188 - Sent Decoy Packet: 103.103.208.67 > 218.5.119.41 ip
+2024-12-27 11:08:12,642 - Original Packet Observed: Ether / IP / TCP 172.26.226.72:29330 > 20.189.173.24:https PA / Raw
+2024-12-27 11:08:14,654 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:08:14,656 - Sent Decoy Packet: 103.103.208.67 > 60.193.199.121 ip
+2024-12-27 11:08:16,964 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:08:16,966 - Sent Decoy Packet: 103.103.208.67 > 40.194.154.90 ip
+2024-12-27 11:08:19,246 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:08:19,248 - Sent Decoy Packet: 103.103.208.67 > 65.103.183.93 ip
+2024-12-27 11:08:21,440 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:08:21,442 - Sent Decoy Packet: 103.103.208.67 > 126.211.84.223 ip
+2024-12-27 11:08:23,897 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:08:23,899 - Sent Decoy Packet: 103.103.208.67 > 102.189.210.124 ip
+2024-12-27 11:08:24,179 - Original Packet Observed: Ether / IP / UDP / DNS Qry "b'_meshcop._udp.local.'" 
+2024-12-27 11:08:26,185 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:08:26,187 - Sent Decoy Packet: 103.103.208.67 > 63.55.254.87 ip
+2024-12-27 11:08:28,698 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:08:28,700 - Sent Decoy Packet: 103.103.208.67 > 205.254.74.24 ip
+2024-12-27 11:08:30,995 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:08:30,998 - Sent Decoy Packet: 103.103.208.67 > 91.135.218.145 ip
+2024-12-27 11:08:33,145 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:08:33,148 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 28.125.11.223:3039 / Raw
+2024-12-27 11:08:35,449 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:08:35,451 - Sent Decoy Packet: 103.103.208.67 > 36.100.250.182 ip
+2024-12-27 11:08:35,630 - Original Packet Observed: Ether / IP / TCP 142.250.195.74:https > 172.26.226.72:28419 PA / Raw
+2024-12-27 11:08:37,646 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:08:37,648 - Sent Decoy Packet: 103.103.208.67 > 65.28.13.238 ip
+2024-12-27 11:08:39,879 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:08:39,882 - Sent Decoy Packet: 103.103.208.67 > 194.254.203.38 ip
+2024-12-27 11:08:42,141 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:08:42,143 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 65.247.46.208:19303 / Raw
+2024-12-27 11:08:44,289 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:08:44,292 - Sent Decoy Packet: 103.103.208.67 > 164.248.58.220 ip
+2024-12-27 11:08:46,690 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:08:46,692 - Sent Decoy Packet: 103.103.208.67 > 128.233.18.120 ip
+2024-12-27 11:08:46,835 - Original Packet Observed: Ether / IP / UDP / DNS Qry "b'EP06A0CB.local.'" 
+2024-12-27 11:08:48,838 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:08:48,841 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 43.221.28.112:44859 / Raw
+2024-12-27 11:08:51,358 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:08:51,360 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 32.247.178.97:3159 / Raw
+2024-12-27 11:08:53,800 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:08:53,803 - Sent Decoy Packet: 103.103.208.67 > 182.79.138.140 ip
+2024-12-27 11:08:55,964 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:08:55,966 - Sent Decoy Packet: 103.103.208.67 > 180.204.125.1 ip
+2024-12-27 11:08:58,328 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:08:58,330 - Sent Decoy Packet: 103.103.208.67 > 34.206.57.38 ip
+2024-12-27 11:08:58,829 - Original Packet Observed: Ether / IP / TCP 52.182.143.208:https > 172.26.226.72:29512 SA
+2024-12-27 11:09:00,842 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:09:00,845 - Sent Decoy Packet: 103.103.208.67 > 150.221.60.189 ip
+2024-12-27 11:09:03,358 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:09:03,360 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 217.167.123.167:61020 / Raw
+2024-12-27 11:09:05,574 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:09:05,576 - Sent Decoy Packet: 103.103.208.67 > 26.150.218.237 ip
+2024-12-27 11:09:07,867 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:09:07,870 - Sent Decoy Packet: 103.103.208.67 > 71.106.254.89 ip
+2024-12-27 11:09:10,017 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:09:10,020 - Sent Decoy Packet: 103.103.208.67 > 203.38.117.249 ip
+2024-12-27 11:09:10,351 - Original Packet Observed: Ether / IP / TCP 172.26.226.72:29512 > 52.182.143.208:https A
+2024-12-27 11:09:10,355 - Sent Decoy Packet: 103.103.208.67 > 233.202.104.192 ip
+2024-12-27 11:09:12,693 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:09:12,696 - Sent Decoy Packet: 103.103.208.67 > 31.99.165.79 ip
+2024-12-27 11:09:14,956 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:09:14,958 - Sent Decoy Packet: 103.103.208.67 > 22.46.9.247 ip
+2024-12-27 11:09:17,076 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:09:17,078 - Sent Decoy Packet: 103.103.208.67 > 102.189.210.124 ip
+2024-12-27 11:09:19,481 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:09:19,484 - Sent Decoy Packet: 103.103.208.67 > 162.32.25.164 ip
+2024-12-27 11:09:19,842 - Original Packet Observed: Ether / IP / TCP 172.26.226.72:29512 > 52.182.143.208:https PA / Raw
+2024-12-27 11:09:21,849 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:09:21,852 - Sent Decoy Packet: 103.103.208.67 > 218.5.119.41 ip
+2024-12-27 11:09:23,982 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:09:23,984 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 136.197.216.7:45996 / Raw
+2024-12-27 11:09:26,340 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:09:26,342 - Sent Decoy Packet: 103.103.208.67 > 114.110.118.188 ip
+2024-12-27 11:09:28,847 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:09:28,851 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 124.48.218.18:14304 / Raw
+2024-12-27 11:09:30,995 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:09:30,997 - Sent Decoy Packet: 103.103.208.67 > 51.244.167.145 ip
+2024-12-27 11:09:31,382 - Original Packet Observed: Ether / IP / TCP 172.26.226.72:28419 > 142.250.195.74:https A
+2024-12-27 11:09:33,399 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:09:33,401 - Sent Decoy Packet: 103.103.208.67 > 174.239.88.137 ip
+2024-12-27 11:09:35,632 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:09:35,634 - Sent Decoy Packet: 103.103.208.67 > 7.252.223.207 ip
+2024-12-27 11:09:37,783 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:09:37,786 - Sent Decoy Packet: 103.103.208.67 > 32.240.128.66 ip
+2024-12-27 11:09:40,263 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:09:40,266 - Sent Decoy Packet: 103.103.208.67 > 31.99.165.79 ip
+2024-12-27 11:09:42,730 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:09:42,733 - Sent Decoy Packet: 103.103.208.67 > 120.70.197.143 ip
+2024-12-27 11:09:43,226 - Original Packet Observed: Ether / IP / TCP 20.189.173.24:https > 172.26.226.72:29330 A / Padding
+2024-12-27 11:09:45,231 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:09:45,233 - Sent Decoy Packet: 103.103.208.67 > 32.240.128.66 ip
+2024-12-27 11:09:47,609 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:09:47,611 - Sent Decoy Packet: 103.103.208.67 > 203.38.117.249 ip
+2024-12-27 11:09:49,907 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:09:49,910 - Sent Decoy Packet: 103.103.208.67 > 95.120.248.214 ip
+2024-12-27 11:09:50,319 - Sent Decoy Packet: 103.103.208.67 > 224.51.253.109 ip
+2024-12-27 11:09:52,789 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:09:52,791 - Sent Decoy Packet: 103.103.208.67 > 45.94.66.119 ip
+2024-12-27 11:09:52,916 - Original Packet Observed: Ether / IP / UDP / NBNSHeader / NBNSQueryRequest who has '\\EP06A0CB'
+2024-12-27 11:09:54,933 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:09:54,936 - Sent Decoy Packet: 103.103.208.67 > 194.254.203.38 ip
+2024-12-27 11:09:57,318 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:09:57,321 - Sent Decoy Packet: 103.103.208.67 > 52.238.183.58 ip
+2024-12-27 11:09:59,513 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:09:59,515 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 124.48.218.18:25675 / Raw
+2024-12-27 11:10:01,883 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:10:01,886 - Sent Decoy Packet: 103.103.208.67 > 167.76.57.228 ip
+2024-12-27 11:10:04,323 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:10:04,325 - Sent Decoy Packet: 103.103.208.67 > 7.252.223.207 ip
+2024-12-27 11:10:04,467 - Original Packet Observed: Ether / IP / TCP 172.26.226.72:29327 > 108.159.61.3:https PA / Raw
+2024-12-27 11:10:06,484 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:10:06,487 - Sent Decoy Packet: 103.103.208.67 > 32.240.128.66 ip
+2024-12-27 11:10:08,688 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:10:08,690 - Sent Decoy Packet: 103.103.208.67 > 63.55.254.87 ip
+2024-12-27 11:10:11,030 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:10:11,032 - Sent Decoy Packet: 103.103.208.67 > 128.233.18.120 ip
+2024-12-27 11:10:13,386 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:10:13,389 - Sent Decoy Packet: 103.103.208.67 > 171.230.66.72 ip
+2024-12-27 11:10:15,884 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:10:15,886 - Sent Decoy Packet: 103.103.208.67 > 138.89.151.225 ip
+2024-12-27 11:10:16,081 - Original Packet Observed: Ether / IP / TCP 108.159.61.3:https > 172.26.226.72:29327 A / Padding
+2024-12-27 11:10:18,098 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:10:18,100 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 65.247.46.208:11841 / Raw
+2024-12-27 11:10:20,332 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:10:20,334 - Sent Decoy Packet: 103.103.208.67 > 150.221.60.189 ip
+2024-12-27 11:10:22,783 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:10:22,785 - Sent Decoy Packet: 103.103.208.67 > 37.163.131.31 ip
+2024-12-27 11:10:24,964 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:10:24,967 - Sent Decoy Packet: 103.103.208.67 > 51.244.167.145 ip
+2024-12-27 11:10:27,190 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:10:27,192 - Sent Decoy Packet: 103.103.208.67 > 184.132.7.208 ip
+2024-12-27 11:10:27,612 - Original Packet Observed: Ether / IP / TCP 108.159.61.3:https > 172.26.226.72:29327 A / Raw
+2024-12-27 11:10:29,625 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:10:29,629 - Sent Decoy Packet: 103.103.208.67 > 104.148.174.35 ip
+2024-12-27 11:10:31,811 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:10:31,813 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 136.197.216.7:6331 / Raw
+2024-12-27 11:10:34,179 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:10:34,181 - Sent Decoy Packet: 103.103.208.67 > 137.37.237.201 ip
+2024-12-27 11:10:36,515 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:10:36,518 - Sent Decoy Packet: 103.103.208.67 > 250.117.41.150 ip
+2024-12-27 11:10:36,702 - Sent Decoy Packet: 103.103.208.67 > 239.196.10.45 ip
+2024-12-27 11:10:36,945 - Original Packet Observed: Ether / IP / TCP 108.159.61.3:https > 172.26.226.72:29327 PA / Raw
+2024-12-27 11:10:36,948 - Sent Decoy Packet: 103.103.208.67 > 227.179.218.135 ip
+2024-12-27 11:10:39,111 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:10:39,113 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 124.48.218.18:42593 / Raw
+2024-12-27 11:10:39,604 - Sent Decoy Packet: 103.103.208.67 > 235.68.0.160 ip
+2024-12-27 11:10:42,054 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:10:42,056 - Sent Decoy Packet: 103.103.208.67 > 37.163.131.31 ip
+2024-12-27 11:10:44,543 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:10:44,545 - Sent Decoy Packet: 103.103.208.67 > 76.59.54.122 ip
+2024-12-27 11:10:44,831 - Original Packet Observed: Ether / IP / TCP 108.159.61.3:https > 172.26.226.72:29327 PA / Raw
+2024-12-27 11:10:46,835 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:10:46,837 - Sent Decoy Packet: 103.103.208.67 > 97.159.85.83 ip
+2024-12-27 11:10:49,190 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:10:49,192 - Sent Decoy Packet: 103.103.208.67 > 184.132.7.208 ip
+2024-12-27 11:10:51,574 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:10:51,576 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 176.199.206.153:2077 / Raw
+2024-12-27 11:10:53,941 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:10:53,944 - Sent Decoy Packet: 103.103.208.67 > 128.233.18.120 ip
+2024-12-27 11:10:56,124 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:10:56,127 - Sent Decoy Packet: 103.103.208.67 > 122.153.113.75 ip
+2024-12-27 11:10:56,590 - Original Packet Observed: Ether / IP / TCP 172.26.226.72:29327 > 108.159.61.3:https A
+2024-12-27 11:10:58,605 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:10:58,608 - Sent Decoy Packet: 103.103.208.67 > 180.204.125.1 ip
+2024-12-27 11:11:00,910 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:11:00,912 - Sent Decoy Packet: 103.103.208.67 > 34.206.57.38 ip
+2024-12-27 11:11:03,198 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:11:03,200 - Sent Decoy Packet: 103.103.208.67 > 253.83.197.252 ip
+2024-12-27 11:11:05,657 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:11:05,659 - Sent Decoy Packet: 103.103.208.67 > 68.190.87.122 ip
+2024-12-27 11:11:07,944 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:11:07,946 - Sent Decoy Packet: 103.103.208.67 > 180.204.125.1 ip
+2024-12-27 11:11:08,110 - Original Packet Observed: Ether / IP / TCP 52.182.143.208:https > 172.26.226.72:29512 PA / Raw
+2024-12-27 11:11:10,126 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:11:10,128 - Sent Decoy Packet: 103.103.208.67 > 250.117.41.150 ip
+2024-12-27 11:11:12,510 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:11:12,512 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 28.125.11.223:32749 / Raw
+2024-12-27 11:11:14,674 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:11:14,677 - Sent Decoy Packet: 103.103.208.67 > 250.156.96.76 ip
+2024-12-27 11:11:16,977 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:11:16,980 - Sent Decoy Packet: 103.103.208.67 > 164.248.58.220 ip
+2024-12-27 11:11:19,463 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:11:19,465 - Sent Decoy Packet: 103.103.208.67 > 17.139.195.165 ip
+2024-12-27 11:11:19,747 - Original Packet Observed: Ether / IP / TCP 172.26.226.72:29512 > 52.182.143.208:https PA / Raw
+2024-12-27 11:11:21,757 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:11:21,759 - Sent Decoy Packet: 103.103.208.67 > 26.113.221.199 ip
+2024-12-27 11:11:21,959 - Sent Decoy Packet: 103.103.208.67 > 233.202.104.192 ip
+2024-12-27 11:11:24,281 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:11:24,284 - Sent Decoy Packet: 103.103.208.67 > 184.132.7.208 ip
+2024-12-27 11:11:26,690 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:11:26,693 - Sent Decoy Packet: 103.103.208.67 > 182.79.138.140 ip
+2024-12-27 11:11:28,814 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:11:28,816 - Sent Decoy Packet: 103.103.208.67 > 126.211.84.223 ip
+2024-12-27 11:11:29,259 - Original Packet Observed: Ether / IP / UDP 172.26.224.114:47178 > 239.255.255.250:ssdp / Raw
+2024-12-27 11:11:31,270 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:11:31,273 - Sent Decoy Packet: 103.103.208.67 > 43.210.200.208 ip
+2024-12-27 11:11:33,742 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:11:33,744 - Sent Decoy Packet: 103.103.208.67 > 68.190.87.122 ip
+2024-12-27 11:11:34,197 - Sent Decoy Packet: 103.103.208.67 > 229.71.158.128 ip
+2024-12-27 11:11:36,410 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:11:36,412 - Sent Decoy Packet: 103.103.208.67 > 153.82.123.188 ip
+2024-12-27 11:11:38,911 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:11:38,914 - Sent Decoy Packet: 103.103.208.67 > 126.96.208.189 ip
+2024-12-27 11:11:39,179 - Original Packet Observed: Ether / IP / TCP 52.182.143.208:https > 172.26.226.72:29512 A / Raw
+2024-12-27 11:11:41,186 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:11:41,188 - Sent Decoy Packet: 103.103.208.67 > 114.110.118.188 ip
+2024-12-27 11:11:43,501 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:11:43,503 - Sent Decoy Packet: 103.103.208.67 > 68.190.87.122 ip
+2024-12-27 11:11:45,859 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:11:45,862 - Sent Decoy Packet: 103.103.208.67 > 47.163.60.65 ip
+2024-12-27 11:11:48,093 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:11:48,096 - Sent Decoy Packet: 103.103.208.67 > 128.233.18.120 ip
+2024-12-27 11:11:50,529 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:11:50,531 - Sent Decoy Packet: 103.103.208.67 > 47.163.60.65 ip
+2024-12-27 11:11:50,983 - Original Packet Observed: Ether / IP / TCP 52.182.143.208:https > 172.26.226.72:29512 A / Raw
+2024-12-27 11:11:53,000 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:11:53,003 - Sent Decoy Packet: 103.103.208.67 > 71.106.254.89 ip
+2024-12-27 11:11:55,114 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:11:55,117 - Sent Decoy Packet: 103.103.208.67 > 104.148.174.35 ip
+2024-12-27 11:11:57,493 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:11:57,495 - Sent Decoy Packet: 103.103.208.67 > 120.70.197.143 ip
+2024-12-27 11:11:59,990 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:11:59,992 - Sent Decoy Packet: 103.103.208.67 > 34.206.57.38 ip
+2024-12-27 11:12:02,170 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:12:02,172 - Sent Decoy Packet: 103.103.208.67 > 54.133.203.92 ip
+2024-12-27 11:12:02,430 - Original Packet Observed: Ether / IP / TCP 52.182.143.208:https > 172.26.226.72:29512 A / Raw
+2024-12-27 11:12:02,433 - Sent Decoy Packet: 103.103.208.67 > 224.51.253.109 ip
+2024-12-27 11:12:04,877 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:12:04,878 - Sent Decoy Packet: 103.103.208.67 > 78.19.95.18 ip
+2024-12-27 11:12:07,373 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:12:07,375 - Sent Decoy Packet: 103.103.208.67 > 97.159.85.83 ip
+2024-12-27 11:12:09,824 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:12:09,826 - Sent Decoy Packet: 103.103.208.67 > 174.239.88.137 ip
+2024-12-27 11:12:12,028 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:12:12,031 - Sent Decoy Packet: 103.103.208.67 > 218.208.244.35 ip
+2024-12-27 11:12:12,480 - Original Packet Observed: Ether / IP / TCP 52.182.143.208:https > 172.26.226.72:29512 PA / Raw
+2024-12-27 11:12:14,488 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:12:14,490 - Sent Decoy Packet: 103.103.208.67 > 204.0.64.100 ip
+2024-12-27 11:12:16,818 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:12:16,821 - Sent Decoy Packet: 103.103.208.67 > 107.89.231.48 ip
+2024-12-27 11:12:17,125 - Sent Decoy Packet: 103.103.208.67 > 233.202.104.192 ip
+2024-12-27 11:12:19,301 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:12:19,303 - Sent Decoy Packet: 103.103.208.67 > 218.208.244.35 ip
+2024-12-27 11:12:21,776 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:12:21,779 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 33.246.156.33:24282 / Raw
+2024-12-27 11:12:21,973 - Original Packet Observed: Ether / IP / TCP 172.26.226.72:29512 > 52.182.143.208:https A
+2024-12-27 11:12:23,988 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:12:23,991 - Sent Decoy Packet: 103.103.208.67 > 51.244.167.145 ip
+2024-12-27 11:12:24,322 - Sent Decoy Packet: 103.103.208.67 > 239.196.10.45 ip
+2024-12-27 11:12:26,714 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:12:26,716 - Sent Decoy Packet: 103.103.208.67 > 104.148.174.35 ip
+2024-12-27 11:12:29,161 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:12:29,163 - Sent Decoy Packet: 103.103.208.67 > 174.239.88.137 ip
+2024-12-27 11:12:31,612 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:12:31,614 - Sent Decoy Packet: 103.103.208.67 > 43.210.200.208 ip
+2024-12-27 11:12:31,745 - Original Packet Observed: Ether / IP / TCP 172.26.226.72:29512 > 52.182.143.208:https A / Raw
+2024-12-27 11:12:33,757 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:12:33,759 - Sent Decoy Packet: 103.103.208.67 > 108.229.80.144 ip
+2024-12-27 11:12:36,172 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:12:36,174 - Sent Decoy Packet: 103.103.208.67 > 164.248.58.220 ip
+2024-12-27 11:12:38,655 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:12:38,657 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 124.48.218.18:19387 / Raw
+2024-12-27 11:12:41,159 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:12:41,162 - Sent Decoy Packet: 103.103.208.67 > 180.204.125.1 ip
+2024-12-27 11:12:43,336 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:12:43,339 - Sent Decoy Packet: 103.103.208.67 > 45.94.66.119 ip
+2024-12-27 11:12:43,829 - Original Packet Observed: Ether / IP / TCP 172.26.226.72:29512 > 52.182.143.208:https PA / Raw
+2024-12-27 11:12:45,840 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:12:45,841 - Sent Decoy Packet: 103.103.208.67 > 150.221.60.189 ip
+2024-12-27 11:12:48,025 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:12:48,027 - Sent Decoy Packet: 103.103.208.67 > 71.106.254.89 ip
+2024-12-27 11:12:50,425 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:12:50,427 - Sent Decoy Packet: 103.103.208.67 > 162.32.25.164 ip
+2024-12-27 11:12:52,885 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:12:52,887 - Sent Decoy Packet: 103.103.208.67 > 36.100.250.182 ip
+2024-12-27 11:12:55,306 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:12:55,308 - Sent Decoy Packet: 103.103.208.67 > 102.189.210.124 ip
+2024-12-27 11:12:55,531 - Original Packet Observed: Ether / IP / UDP / DNS Qry "b'_kdeconnect._udp.local.'" 
+2024-12-27 11:12:57,534 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:12:57,537 - Sent Decoy Packet: 103.103.208.67 > 194.254.203.38 ip
+2024-12-27 11:12:59,799 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:12:59,802 - Sent Decoy Packet: 103.103.208.67 > 150.221.60.189 ip
+2024-12-27 11:13:02,127 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:13:02,129 - Sent Decoy Packet: 103.103.208.67 > 250.117.41.150 ip
+2024-12-27 11:13:04,483 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:13:04,486 - Sent Decoy Packet: 103.103.208.67 > 43.210.200.208 ip
+2024-12-27 11:13:06,954 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:13:06,957 - Sent Decoy Packet: 103.103.208.67 > 7.252.223.207 ip
+2024-12-27 11:13:07,200 - Original Packet Observed: Ether / IP / TCP 52.182.143.208:https > 172.26.226.72:29512 A / Padding
+2024-12-27 11:13:09,216 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:13:09,217 - Sent Decoy Packet: 103.103.208.67 > 114.110.118.188 ip
+2024-12-27 11:13:11,661 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:13:11,663 - Sent Decoy Packet: 103.103.208.67 > 203.38.117.249 ip
+2024-12-27 11:13:13,870 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:13:13,873 - Sent Decoy Packet: 103.103.208.67 > 37.163.131.31 ip
+2024-12-27 11:13:16,096 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:13:16,098 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 33.246.156.33:52510 / Raw
+2024-12-27 11:13:18,493 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:13:18,495 - Sent Decoy Packet: 103.103.208.67 > 203.38.117.249 ip
+2024-12-27 11:13:18,615 - Original Packet Observed: Ether / IP / UDP / DNS Qry "b'_meshcop._udp.local.'" 
+2024-12-27 11:13:18,618 - Sent Decoy Packet: 103.103.208.67 > 235.68.0.160 ip
+2024-12-27 11:13:20,910 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:13:20,912 - Sent Decoy Packet: 103.103.208.67 > 68.190.87.122 ip
+2024-12-27 11:13:21,188 - Sent Decoy Packet: 103.103.208.67 > 233.202.104.192 ip
+2024-12-27 11:13:23,463 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:13:23,465 - Sent Decoy Packet: 103.103.208.67 > 126.96.208.189 ip
+2024-12-27 11:13:25,789 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:13:25,791 - Sent Decoy Packet: 103.103.208.67 > 68.190.87.122 ip
+2024-12-27 11:13:26,022 - Original Packet Observed: Ether / IP / TCP 52.182.143.208:https > 172.26.226.72:29512 PA / Raw
+2024-12-27 11:13:28,033 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:13:28,035 - Sent Decoy Packet: 103.103.208.67 > 122.153.113.75 ip
+2024-12-27 11:13:28,161 - Sent Decoy Packet: 103.103.208.67 > 227.179.218.135 ip
+2024-12-27 11:13:30,474 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:13:30,477 - Sent Decoy Packet: IP / UDP 103.103.208.67:domain > 217.167.123.167:16305 / Raw
+2024-12-27 11:13:32,658 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:13:32,660 - Sent Decoy Packet: 103.103.208.67 > 17.139.195.165 ip
+2024-12-27 11:13:34,782 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:13:34,784 - Sent Decoy Packet: 103.103.208.67 > 108.229.80.144 ip
+2024-12-27 11:13:35,170 - Original Packet Observed: Ether / IP / TCP 172.26.226.72:29512 > 52.182.143.208:https A
+2024-12-27 11:13:37,178 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:13:37,181 - Sent Decoy Packet: 103.103.208.67 > 104.148.174.35 ip
+2024-12-27 11:13:39,393 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:13:39,395 - Sent Decoy Packet: 103.103.208.67 > 45.94.66.119 ip
+2024-12-27 11:13:41,549 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:13:41,552 - Sent Decoy Packet: 103.103.208.67 > 39.223.46.195 ip
+2024-12-27 11:13:43,782 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:13:43,785 - Sent Decoy Packet: 103.103.208.67 > 97.159.85.83 ip
+2024-12-27 11:13:45,939 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:13:45,940 - Sent Decoy Packet: 103.103.208.67 > 180.204.125.1 ip
+2024-12-27 11:13:46,405 - Original Packet Observed: Ether / IP / UDP / NBNSHeader / NBNSQueryRequest who has '\\EP06A0CB'
+2024-12-27 11:13:48,417 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:13:48,420 - Sent Decoy Packet: 103.103.208.67 > 17.139.195.165 ip
+2024-12-27 11:13:50,635 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:13:50,637 - Sent Decoy Packet: 103.103.208.67 > 132.153.97.133 ip
+2024-12-27 11:13:52,978 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:13:52,979 - Sent Decoy Packet: 103.103.208.67 > 65.28.13.238 ip
+2024-12-27 11:13:55,140 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:13:55,141 - Sent Decoy Packet: 103.103.208.67 > 47.163.60.65 ip
+2024-12-27 11:13:57,370 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 11:13:57,372 - Sent Decoy Packet: 103.103.208.67 > 250.156.96.76 ip
+2024-12-27 11:13:57,490 - Original Packet Observed: Ether / IP / UDP / DNS Ans "172.26.224.141" 

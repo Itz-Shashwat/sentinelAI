@@ -5,6 +5,8 @@ import Sidebar from "./Sidebar";
 const GANDashboard = () => {
   const [dataCount, setDataCount] = useState("");
   const [isFetching, setIsFetching] = useState(false);
+  const [dataRows, setDataRows] = useState([]); // State for storing data rows
+  const [headers, setHeaders] = useState([]); // State for storing headers
 
   const fetchData = async () => {
     if (!dataCount || isNaN(dataCount)) {
@@ -13,6 +15,8 @@ const GANDashboard = () => {
     }
 
     setIsFetching(true);
+    setDataRows([]); // Clear previous rows when fetching new data
+    setHeaders([]);  // Clear previous headers
 
     try {
       // Get user's public IP address
@@ -41,6 +45,16 @@ const GANDashboard = () => {
       document.body.appendChild(link);
       link.click();
       link.remove();
+
+      // Convert the blob to text and then to rows (CSV format)
+      const text = await blob.text();
+      const rows = text.split("\n").slice(1, 6); // Skip the first row and take the next 5 rows
+      setDataRows(rows); // Update the dataRows state
+
+      // The first row (headers) will serve as the labels for the columns
+      const headerRow = text.split("\n")[0].split(",");
+      setHeaders(headerRow); // Set headers for the table
+
     } catch (error) {
       console.error("Error fetching data:", error);
       alert("An error occurred while fetching the data.");
@@ -52,7 +66,7 @@ const GANDashboard = () => {
   return (
     <div style={{ display: "flex" }}>
       {/* Sidebar */}
-      <Sidebar/>
+      <Sidebar />
       {/* Main Content */}
       <div
         style={{
@@ -97,6 +111,67 @@ const GANDashboard = () => {
         >
           {isFetching ? "Fetching..." : "Fetch Data"}
         </button>
+
+        {/* Display the first 5 rows below the button */}
+        {dataRows.length > 0 && (
+          <div style={{ marginTop: "20px" }}>
+            <h3>Few rows of data</h3>
+            <table
+              style={{
+                width: "100%",
+                borderCollapse: "collapse",
+                marginTop: "20px",
+                borderRadius: "8px",
+                boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
+              }}
+            >
+              <thead>
+                <tr>
+                  {headers.map((header, index) => (
+                    <th
+                      key={index}
+                      style={{
+                        padding: "12px 15px",
+                        border: "1px solid #444",
+                        textAlign: "left",
+                        fontWeight: "bold",
+                        color: "#bb86fc",
+                        backgroundColor: "#333",
+                      }}
+                    >
+                      {header}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {dataRows.map((row, rowIndex) => (
+                  <tr
+                    key={rowIndex}
+                    style={{
+                      transition: "background-color 0.3s",
+                    }}
+                    onMouseEnter={(e) => (e.target.style.backgroundColor = "#333")}
+                    onMouseLeave={(e) => (e.target.style.backgroundColor = "")}
+                  >
+                    {row.split(",").map((cell, cellIndex) => (
+                      <td
+                        key={cellIndex}
+                        style={{
+                          padding: "12px 15px",
+                          border: "1px solid #444",
+                          textAlign: "left",
+                        }}
+                      >
+                        {cell}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
       </div>
     </div>
   );

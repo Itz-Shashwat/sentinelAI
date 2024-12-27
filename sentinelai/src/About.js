@@ -48,6 +48,7 @@ function About() {
     borderRadius: "10px",
     overflow: "hidden",
     boxShadow: "0 4px 15px rgba(0, 0, 0, 0.5)",
+    marginLeft:"12px",
   };
 
   const paragraphStyle = {
