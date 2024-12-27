@@ -1,0 +1,26 @@
+1. Start the Injector Program First
+The injector program needs to listen for traffic and generate decoy packets.
+Run it in the terminal:
+bash
+Copy code
+sudo python3 decoy_injector.py
+2. Simulate Real Traffic Using Commands
+Open another terminal window and run the following commands:
+
+Ping Command:
+
+bash
+Copy code
+ping -c 4 google.com
+Curl Command:
+
+bash
+Copy code
+curl https://jsonplaceholder.typicode.com/posts/1
+3. Monitor Decoy Packets
+The injector program (decoy_injector.py) should detect real traffic (from ping and curl) and inject decoy packets based on the configurations from your CSV file.
+If the program writes logs or outputs decoy packet data, you should see it in the terminal where the injector is running.
+4. (Optional) Verify Traffic
+Use Wireshark or your own monitoring program to verify:
+Outgoing traffic includes both real and decoy packets.
+Confirm the structure and details of synthetic packets.
