@@ -730,3 +730,11 @@
 2024-12-27 11:13:57,370 - Mac address to reach destination not found. Using broadcast.
 2024-12-27 11:13:57,372 - Sent Decoy Packet: 103.103.208.67 > 250.156.96.76 ip
 2024-12-27 11:13:57,490 - Original Packet Observed: Ether / IP / UDP / DNS Ans "172.26.224.141" 
+2024-12-27 17:22:07,497 - Listening for outgoing packets on Wi-Fi...
+2024-12-27 17:22:07,528 - Original Packet Observed: Ether / IP / UDP / DNS Qry "b'data-ai.microsoft.com.'" 
+2024-12-27 17:22:09,535 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 17:22:09,540 - Sent Decoy Packet: 103.103.208.67 > 57.225.49.142 ip
+2024-12-27 17:22:11,808 - Mac address to reach destination not found. Using broadcast.
+2024-12-27 17:22:11,809 - Sent Decoy Packet: 103.103.208.67 > 174.239.88.137 ip
+2024-12-27 17:22:14,210 - more Mac address to reach destination not found. Using broadcast.
+2024-12-27 17:22:14,212 - Sent Decoy Packet: 103.103.208.67 > 138.89.151.225 ip

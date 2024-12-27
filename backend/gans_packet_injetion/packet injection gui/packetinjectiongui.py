@@ -1,21 +1,24 @@
+import time
+import threading
 import tkinter as tk
 from tkinter import filedialog, messagebox
 from scapy.all import sniff, IP, TCP, UDP, send, get_if_list
 import pandas as pd
-import threading  
-
-decoy_log = []
 
 class DecoyInjectionApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("Decoy Traffic Injection")
+        self.root.title("Sentinel AI")
         self.root.geometry("600x400")
-
-
+        
+        # New Attributes for Traffic Control
+        self.packet_rate = 1  # Inject 1 packet per second by default
+        self.batch_size = 5  # Number of packets to inject in one batch (example value)
+        self.total_packets_injected = 0  # Total number of packets injected
+        self.packets_per_second = 0  # Packets injected per second (calculated in real-time)
+        
         self.file_path = ""
-
-        self.title_label = tk.Label(root, text="Network Traffic Decoy Generator", font=("Arial", 16, "bold"))
+        self.title_label = tk.Label(root, text="Network Traffic Decoy Injector", font=("Arial", 16, "bold"))
         self.title_label.pack(pady=20)
 
         self.csv_frame = tk.Frame(root)
@@ -29,6 +32,21 @@ class DecoyInjectionApp:
 
         self.start_inject_btn = tk.Button(root, text="Start Decoy Injection", width=20, command=self.start_sniffing)
         self.start_inject_btn.pack(pady=20)
+
+        # Controls for Traffic Volume Control
+        self.packet_rate_label = tk.Label(root, text="Rate Limiting (Packets per second):")
+        self.packet_rate_label.pack(pady=5)
+
+        self.packet_rate_entry = tk.Entry(root)
+        self.packet_rate_entry.insert(tk.END, str(self.packet_rate))
+        self.packet_rate_entry.pack(pady=5)
+
+        self.batch_size_label = tk.Label(root, text="Batch Size (Packets per batch):")
+        self.batch_size_label.pack(pady=5)
+
+        self.batch_size_entry = tk.Entry(root)
+        self.batch_size_entry.insert(tk.END, str(self.batch_size))
+        self.batch_size_entry.pack(pady=5)
 
         self.status_label = tk.Label(root, text="Status: Waiting for action...", fg="blue", font=("Arial", 10))
         self.status_label.pack(pady=10)
@@ -64,19 +82,36 @@ class DecoyInjectionApp:
             self.write_output(f"{interface}\n")
 
     def inject_decoy_packet(self, src, dst, protocol):
+        # Batch Injection Logic
         decoy_configs = self.load_decoy_config()
         if decoy_configs:
             for decoy in decoy_configs:
                 if decoy["Source IP"] == src and decoy["Destination IP"] == dst and decoy["Protocol"].lower() == protocol.lower():
                     self.write_output(f"Injecting Decoy Packet: Source: {src}, Destination: {dst}, Protocol: {protocol}\n")
+                    
+                    # Create the decoy packet
                     if protocol.lower() == "tcp":
                         decoy_packet = IP(src=src, dst=dst)/TCP()
                     elif protocol.lower() == "udp":
                         decoy_packet = IP(src=src, dst=dst)/UDP()
                     else:
                         decoy_packet = IP(src=src, dst=dst)
+
+                    # Send the decoy packet
                     send(decoy_packet)
+
+                    # Provide feedback in GUI about injection
+                    self.write_output(f"Decoy Packet Sent: {src} -> {dst} (Protocol: {protocol})\n")
+                    
+                    # Log decoy injection for further tracking
                     decoy_log.append({"Source": src, "Destination": dst, "Protocol": protocol})
+
+                    # Update the counter of total packets injected
+                    self.total_packets_injected += 1
+                    self.update_packet_statistics()
+
+                    # Show success message in status label
+                    self.status_label.config(text=f"Decoy Packet Sent to {dst}!", fg="green")
 
     def verify_decoy_packets(self, packet):
         if IP in packet:
@@ -90,15 +125,32 @@ class DecoyInjectionApp:
         if not self.file_path:
             messagebox.showerror("Error", "Please load a CSV file first.")
             return
+
+        # Retrieve user-defined traffic controls
+        try:
+            self.packet_rate = int(self.packet_rate_entry.get())
+            self.batch_size = int(self.batch_size_entry.get())
+        except ValueError:
+            self.write_output("Error: Invalid rate or batch size.\n")
+            return
+
         self.status_label.config(text="Sniffing and injecting decoy packets...", fg="orange")
         self.list_interfaces()
 
         sniff_thread = threading.Thread(target=self.sniff_thread)
-        sniff_thread.daemon = True 
+        sniff_thread.daemon = True  # Run the sniffing process in the background
         sniff_thread.start()
 
     def sniff_thread(self):
-        sniff(iface="Wi-Fi", filter="ip", prn=self.verify_decoy_packets)
+        while True:
+            sniff(iface="Wi-Fi", filter="ip", prn=self.verify_decoy_packets)
+
+    def update_packet_statistics(self):
+        # Update traffic monitoring stats
+        self.packets_per_second += 1
+        self.write_output(f"Total Packets Injected: {self.total_packets_injected}\n")
+        self.write_output(f"Packets Injected in Last Second: {self.packets_per_second}\n")
+        self.packets_per_second = 0  # Reset counter every second
 
     def write_output(self, text):
         self.output_text.config(state=tk.NORMAL)
