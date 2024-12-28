@@ -14,7 +14,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Paths
-generator_model_path = 'backend/Trained model/generator_model.h5'
+generator_model_path = './backend/Trained model/generator_model.h5'
 
 # Load the trained generator model
 generator = tf.keras.models.load_model(generator_model_path)
