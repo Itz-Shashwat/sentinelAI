@@ -3,7 +3,7 @@ import tkinter as tk
 from tkinter import messagebox
 from scapy.all import sniff, IP, TCP, UDP, send
 import pandas as pd
-from tkinter import simpledialog, filedialog  
+from tkinter import simpledialog, filedialog  # Added filedialog for file loading
 
 class DecoyInjectionApp:
     def __init__(self, root):
@@ -14,7 +14,7 @@ class DecoyInjectionApp:
         self.file_path = ""
         self.decoy_data = None
         self.total_packets_injected = 0
-        self.input_prompt_shown = False 
+        self.input_prompt_shown = False  # Flag to control input prompt repetition
 
         # UI Components
         self.title_label = tk.Label(root, text="Network Traffic Decoy Injector", font=("Arial", 16, "bold"))
@@ -53,7 +53,7 @@ class DecoyInjectionApp:
 
     def inject_decoy_packet(self, src, dst, protocol, length):
         try:
-            # Create packet 
+            # Create a packet with a length field in the payload
             if protocol.lower() == "tcp":
                 decoy_packet = IP(src=src, dst=dst)/TCP()/("X" * int(length))
             elif protocol.lower() == "udp":
@@ -69,8 +69,10 @@ class DecoyInjectionApp:
 
     def verify_real_packet(self, packet):
         if IP in packet:
+            # Check if input prompt has already been shown
             if not self.input_prompt_shown:
                 self.input_prompt_shown = True
+                # Ask for input only once
                 self.root.after(0, self.ask_for_input)
 
     def ask_for_input(self):
@@ -80,13 +82,14 @@ class DecoyInjectionApp:
             self.write_output("Decoy data is not available. Please load the CSV first.\n")
             return
 
-        # Run packet injection
+        # Run the packet injection in a separate thread
         inject_thread = threading.Thread(target=self.inject_packets, args=(num_packets,))
         inject_thread.daemon = True
         inject_thread.start()
 
     def inject_packets(self, num_packets):
         for _ in range(num_packets):
+            # Iterate over the rows in the CSV and inject packets
             for _, row in self.decoy_data.iterrows():
                 src = row['Source IP']
                 dst = row['Destination IP']
