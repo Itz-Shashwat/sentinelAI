@@ -82,7 +82,7 @@ function About() {
               <p style={paragraphStyle}>
                 Using tools like Wireshark and the power of Generative Adversarial Networks (GANs), this dynamic solution evolves in real-time, staying one step ahead
                 of cyber threats. It's not just defense—it's a game of wits, where the attackers never know what hit them. Say goodbye to static defenses and hello to
-                a smarter, more resilient cybersecurity system!
+                a smarter, more resilient cybersecurity system! or whatttt.
               </p>
             </div>
           </section>
