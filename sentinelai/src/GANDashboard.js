@@ -64,19 +64,27 @@ const GANDashboard = () => {
   };
 
   return (
-    <div style={{ display: "flex" }}>
+    <div style={{ display: "flex", height: "100vh" }}>
       {/* Sidebar */}
-      <Sidebar />
+      <div
+        style={{
+          width: "250px", // Explicitly set the sidebar width
+          backgroundColor: "#333",
+          color: "white",
+          height: "100vh", // Sidebar should span the whole height
+        }}
+      >
+        <Sidebar />
+      </div>
+
       {/* Main Content */}
       <div
         style={{
-          marginLeft: "270px",
+          flex: 1, // The content will take up the remaining space
           padding: "25px",
-          width: "calc(100% - 270px)",
-          backgroundColor: "#1f1f2e", // Match sidebar background color
-          color: "white", // Ensure text is visible on dark background
-          minHeight: "100vh", // Ensure full height background
-          borderLeft: "1px solid #333", // Add a subtle 1px border
+          backgroundColor: "#1f1f2e", // Background of the main content area
+          color: "white", // Ensure visibility of text
+          overflowY: "auto", // Handle overflow vertically
         }}
       >
         <h1>Generate Synthetic Data</h1>
@@ -111,7 +119,10 @@ const GANDashboard = () => {
         >
           {isFetching ? "Fetching..." : "Fetch Data"}
         </button>
-
+        <section>
+          <br></br>
+        <h3>Output Data Sample</h3>
+        </section>
         {/* Display the first 5 rows below the button */}
         {dataRows.length > 0 && (
           <div style={{ marginTop: "20px" }}>

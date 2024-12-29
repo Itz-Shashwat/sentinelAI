@@ -8,28 +8,36 @@ function Sidebar() {
         {`
           .sidebar-container {
             width: 250px;
-            background-color: #1f1f2e;
+            background: linear-gradient(rgba(31, 31, 46, 0.9), rgba(10, 8, 10, 0.8));
             padding: 20px;
             position: fixed;
             height: 100vh;
-            border-right: 2px solid black;
+            border-right: 2.1px solid black;
+            z-index: 9999; /* Ensure sidebar is above other content */
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3); /* Add shadow for better visual separation */
           }
+
           .sidebar-title {
-            color: #bb86fc;
+            color:rgb(215, 221, 227);
             text-align: center;
             font-weight: 600;
           }
+
           .sidebar-list {
             list-style: none;
             padding: 0;
+            margin-top: 20px; /* Ensure list doesn't overlap title */
           }
+
           .sidebar-link {
             color: white;
             display: block;
             padding: 10px;
             text-decoration: none;
             transition: color 0.3s ease;
+            margin-bottom: 10px; /* Space out links */
           }
+
           .sidebar-link:hover {
             color: #d3a6d8; /* Light purple color */
           }

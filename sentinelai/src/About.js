@@ -2,6 +2,8 @@ import React from 'react';
 import { Route, Routes, Link } from 'react-router-dom';
 import GANOperationsDashboard from './GANOperationsDashboard';
 import Sidebar from './Sidebar';
+import sentiImage from './assets/senti.jpg';
+
 
 function About() {
   const wrapperStyle = {
@@ -25,6 +27,10 @@ function About() {
     flex: 1,
     display: "flex",
     flexDirection: "column",
+    // Use backticks for the background with template literal
+    background: `linear-gradient(135deg,rgba(31, 31, 46, 0.9), rgba(87, 73, 85, 0.8)), url(${sentiImage}) no-repeat center center/cover`,
+    borderRadius: "10px",
+    boxShadow: "0 4px 15px rgba(0,0,0,0.5)",
   };
 
   const headerStyle = {
@@ -67,7 +73,7 @@ function About() {
         <div style={mainContentStyle}>
           {/* Header */}
           <div style={headerStyle}>
-            <h1 style={{ fontSize: "2.5rem", color: "#bb86fc" }}>SentinelAI</h1>
+            <h1 style={{ fontSize: "2.5rem", color: "rgba(255, 255, 255, 0.7)" }}>SentinelAI</h1>
           </div>
 
           {/* About Section */}
