@@ -58,7 +58,8 @@ function About() {
   };
 
   const paragraphStyle = {
-    position: "relative",
+    textAlign: "justify",
+    position: "center",
     zIndex: 2,
     color: "#ffffff",
   };
@@ -78,17 +79,19 @@ function About() {
 
           {/* About Section */}
           <section>
-            <div style={aboutSectionStyle}>
+  <div style={aboutSectionStyle}>
+    <p style={{ ...paragraphStyle, textAlign: "justify" }}>
+      In our project, Harnessing GANs to Generate Realistic Decoy Data to Mislead Cyber Attackers,
+      we aimed to generate synthetic decoy network traffic that mimics real-world network data,
+      providing an effective tool to thwart cyber attackers. The approach involves training a 
+      Generative Adversarial Network (GAN) on real network traffic data collected using Wireshark,
+      then using the trained model to inject realistic decoy traffic into network systems.
+    </p>
               <p style={paragraphStyle}>
-                Imagine outsmarting cyber attackers with a clever digital decoy! Our project, <strong>"Harnessing GANs to Generate Realistic Decoy Data,"</strong> does
-                just that. By blending cutting-edge AI with a touch of cybersecurity magic, we create lifelike synthetic network traffic designed to baffle and mislead
-                even the most sophisticated hackers.
-              </p>
-              <br />
+              <strong>Training the Model</strong></p>
               <p style={paragraphStyle}>
-                Using tools like Wireshark and the power of Generative Adversarial Networks (GANs), this dynamic solution evolves in real-time, staying one step ahead
-                of cyber threats. It's not just defense—it's a game of wits, where the attackers never know what hit them. Say goodbye to static defenses and hello to
-                a smarter, more resilient cybersecurity system! or whatttt.
+The core of our approach is the Generative Adversarial Network (GAN), a deep learning model composed of two neural networks: the generator and the discriminator. The generator creates synthetic data, while the discriminator attempts to distinguish between real and generated data. Through this adversarial process, the generator improves over time, eventually producing decoy data that closely resembles actual network traffic.
+
               </p>
             </div>
           </section>

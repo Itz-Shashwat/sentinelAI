@@ -1,3 +1,12 @@
+
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background-color: #1f1f2e;
+}
+
 .App {
   text-align: center;
 }
@@ -22,31 +31,72 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  font-family: 'Poppins', sans-serif;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-.page-enter {
-  opacity: 0;
-  transform: scale(0.95);
-}
-.page-enter-active {
-  opacity: 1;
-  transform: scale(1);
-  transition: opacity 300ms, transform 300ms;
-}
-.page-exit {
-  opacity: 1;
-  transform: scale(1);
-}
-.page-exit-active {
-  opacity: 0;
-  transform: scale(0.95);
-  transition: opacity 300ms, transform 300ms;
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease;
 }
 
+.header h1 {
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.content {
+  display: flex;
+  flex: 1;
+}
+
+.mainContent {
+    margin-left: 270px;
+    padding: 40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, rgba(31, 31, 46, 0.9), rgba(87, 73, 85, 0.8)), url('./assets/senti.jpg') no-repeat center center/cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.356);
+}
+
+.paragraph {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+}
+
+.footer {
+  text-align: center;
+  margin-top: auto;
+  font-size: 0.9rem;
+  color: #bbbbbb;
+  animation: slideUp 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 
 @keyframes App-logo-spin {
   from {
@@ -55,4 +105,24 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.margin-top-auto {
+  margin-top: auto;
+}
+
+.font-size-sm {
+  font-size: 0.9rem;
+}
+
+.color-white {
+  color: white;
+}
+
+.color-gray {
+  color: #bbbbbb;
 }

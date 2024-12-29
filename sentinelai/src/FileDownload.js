@@ -7,7 +7,7 @@ const FileDownload = () => {
   const handleDownload = async () => {
     setIsDownloading(true);
     try {
-      const response = await fetch("http://127.0.0.1:4000//download", {
+      const response = await fetch("http://127.0.0.1:4000/download", {
         method: "GET",
       });
 
@@ -42,7 +42,7 @@ const FileDownload = () => {
       <div
         style={{
           flex: 1,
-          display: "flex", // Enables proper layout for children
+          display: "flex",
           flexDirection: "column",
           padding: "25px",
           backgroundColor: "#1f1f2e",
@@ -58,10 +58,24 @@ const FileDownload = () => {
             justifyContent: "center",
             width: "100%",
             maxWidth: "800px",
-            margin: "0 auto", // Centers the content within the right part
+            margin: "0 auto",
           }}
         >
           <h1>Download File</h1>
+
+          {isDownloading && (
+            <div
+              style={{
+                width: "80px",
+                height: "80px",
+                margin: "40px 0",
+                border: "10px solid #bb86fc",
+                borderTop: "10px solid transparent",
+                borderRadius: "50%",
+                animation: "spin 1.5s linear infinite",
+              }}
+            ></div>
+          )}
 
           <div style={{ marginTop: "40px" }}>
             <button
@@ -76,14 +90,31 @@ const FileDownload = () => {
                 cursor: "pointer",
                 transition: "background-color 0.3s",
               }}
-              onMouseEnter={(e) => (e.target.style.backgroundColor = "#a675fc")}
-              onMouseLeave={(e) => (e.target.style.backgroundColor = "#bb86fc")}
+              onMouseEnter={(e) =>
+                (e.target.style.backgroundColor = "#a675fc")
+              }
+              onMouseLeave={(e) =>
+                (e.target.style.backgroundColor = "#bb86fc")
+              }
               disabled={isDownloading}
             >
               {isDownloading ? "Downloading..." : "Download: Sentinel AI"}
             </button>
           </div>
         </div>
+
+        <style>
+          {`
+            @keyframes spin {
+              0% {
+                transform: rotate(0deg);
+              }
+              100% {
+                transform: rotate(360deg);
+              }
+            }
+          `}
+        </style>
       </div>
     </div>
   );
