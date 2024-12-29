@@ -49,7 +49,7 @@ function Sidebar() {
             <Link to="/gan-operations-dashboard" className="sidebar-link">Synthetic Data</Link>
           </li>
           <li>
-            <Link to="/sethoja" className="sidebar-link">Settings</Link>
+            <Link to="/download" className="sidebar-link">Download</Link>
           </li>
         </ul>
       </div>
