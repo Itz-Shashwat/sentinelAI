@@ -8,6 +8,7 @@ import About from './About';
 import FileDownload from './FileDownload';
 import Contact from './Contact';
 import Support from './Support';
+import Ganinfo from './Ganinfo';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/download" element={<FileDownload/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/support" element={<Support/>}/>
+        <Route path="/gantrain" element={<Ganinfo/>}/>
       </Routes>
       </div>
     </Router>

@@ -6,8 +6,8 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)  # Allows Cross-Origin Requests for your React frontend
 
-# CSV file path
-ISSUES_FILE = "Support backend/issues.csv"
+# CSV file pat
+ISSUES_FILE = r"G:\sem8\Capstone\Codes\git repo\sentinelAI\backend\Support backend\issues.csv"
 
 @app.route('/api/issues', methods=['POST'])
 def log_issue():

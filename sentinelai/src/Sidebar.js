@@ -54,6 +54,9 @@ function Sidebar() {
             <Link to="/about" className="sidebar-link">About</Link>
           </li>
           <li>
+            <Link to="/gantrain" className="sidebar-link">Model Training Info</Link>
+          </li>
+          <li>
             <Link to="/gan-operations-dashboard" className="sidebar-link">Synthetic Data</Link>
           </li>
           <li>

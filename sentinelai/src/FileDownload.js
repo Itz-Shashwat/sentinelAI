@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Sidebar from "./Sidebar";
+import { Route, Routes, Link } from "react-router-dom";
+
 
 const FileDownload = () => {
   const [isDownloading, setIsDownloading] = useState(false);
@@ -61,7 +63,7 @@ const FileDownload = () => {
             margin: "0 auto",
           }}
         >
-          <h1>Download File</h1>
+          <h1>Download Software</h1>
 
           {isDownloading && (
             <div
@@ -147,18 +149,14 @@ const FileDownload = () => {
             <h3 style={{ marginTop: "20px", color: "#bb86fc" }}>System Requirements</h3>
             <p><strong>Processor:</strong> Intel i3 or equivalent (minimum), Intel i5 or above (recommended).</p>
             <p><strong>RAM:</strong> 4GB (minimum), 8GB or above (recommended).</p>
-            <p><strong>Storage:</strong> At least 50MB of free space.</p>
-            <p><strong>Software Dependencies:</strong> Python 3.10 or above, Scapy (Networking library).</p>
-
+            <p><strong>Storage:</strong> At least 190MB of free space.</p>
             <h3 style={{ marginTop: "20px", color: "#bb86fc" }}>Support and Feedback</h3>
             <p>
-              If you encounter any issues or have feature requests, reach out to
-              our support team at support@sentinelai.com or visit our Help
-              Center.
+                If you encounter any issues or have feature requests, reach out to our support team at 
+                <Link to="/support" className="sidebar-link" style={{ textDecoration: 'none', display: 'inline', color: '#bb86fc' }}> Support </Link>  or visit our Help Center.
             </p>
           </div>
         </div>
-
         <style>
           {`
             @keyframes spin {
