@@ -44,7 +44,7 @@ function Contact() {
             <div style={mainStyle}>
                 {/* Header */}
                 <div style={headerStyle}>
-                    <h1 style={{ fontSize: "2.5rem", color: "#bb86fc" }}>SentinelAI</h1>
+                    <h1 style={{ fontSize: "2.5rem", color: "#bb86fc", marginTop:"20px" }}>SentinelAI</h1>
                 </div>
                 {/* Content Section */}
                 <section style={contentStyle}>

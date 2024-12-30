@@ -13,6 +13,8 @@ const styles = {
     fontFamily: "Arial, sans-serif",
     minHeight: "100vh",
     display: "flex",
+    justifyContent:"center",
+    alignItems:"center",
     flexDirection: "column", // Stacks the sections vertically
     gap: "20px", // Adds spacing between sections
   },
@@ -63,7 +65,9 @@ const styles = {
     textAlign: "center",  // This aligns the text to the center
     margin: "0 auto",  // Ensure the header takes up full width and centers within container
     marginBottom: "20px", // Space below the header
-    marginTop: "30px", // Space above the header
+    marginTop: "30px",
+    fontSize:"30px",
+    textTransform:"uppercase", // Space above the header
   },
 };
 
