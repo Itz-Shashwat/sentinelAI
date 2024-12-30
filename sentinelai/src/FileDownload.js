@@ -45,7 +45,7 @@ const FileDownload = () => {
           display: "flex",
           flexDirection: "column",
           padding: "25px",
-          backgroundColor: "#1f1f2e",
+          backgroundColor: "linear-gradient(135deg,rgb(58, 102, 145), #dfe7fd)",
           color: "white",
           overflowY: "auto",
         }}
@@ -100,6 +100,62 @@ const FileDownload = () => {
             >
               {isDownloading ? "Downloading..." : "Download: Sentinel AI"}
             </button>
+          </div>
+
+          {/* Information Box */}
+          <div
+            style={{
+              marginTop: "40px",
+              padding: "20px",
+              backgroundColor: "#2a2a40",
+              borderRadius: "8px",
+              boxShadow: "0 4px 8px rgba(15, 15, 15, 0.2)",
+              color: "#e0e0e0",
+              width: "100%",
+              maxWidth: "800px",
+              textAlign: "left",
+            }}
+          >
+            <h2 style={{ marginBottom: "10px", color: "#bb86fc" }}>
+              Sentinel AI: Network Traffic Decoy Injector
+            </h2>
+            <p><strong>Version:</strong> 1.0.0</p>
+            <p><strong>Last Updated:</strong> December 30, 2024</p>
+            <p><strong>File Size:</strong> ~15 MB</p>
+            <p><strong>Supported Platforms:</strong> Windows 10/11 (64-bit)</p>
+
+            <h3 style={{ marginTop: "20px", color: "#bb86fc" }}>Overview</h3>
+            <p>
+              Sentinel AI is a cutting-edge tool designed for security
+              professionals and network administrators to inject realistic
+              decoy traffic into network environments. By mimicking genuine
+              network traffic patterns, it misleads potential attackers, adds
+              resilience to your system, and enhances threat analysis
+              capabilities.
+            </p>
+
+            <h3 style={{ marginTop: "20px", color: "#bb86fc" }}>Key Features</h3>
+            <ul style={{ marginLeft: "20px" }}>
+              <li>Automated Decoy Injection: Dynamically inject decoy packets based on real network traffic.</li>
+              <li>Protocol Support: Inject traffic for TCP, UDP, or custom protocols.</li>
+              <li>CSV Integration: Fetch decoy data directly via API and use preloaded decoy datasets for injection.</li>
+              <li>Custom Packet Injection: Specify IP sources, destinations, protocol, and payload size.</li>
+              <li>User-Friendly Interface: Intuitive, no-code interface built with Tkinter for efficient handling.</li>
+              <li>Real-Time Packet Sniffing: Monitor live traffic and seamlessly inject decoy packets.</li>
+            </ul>
+
+            <h3 style={{ marginTop: "20px", color: "#bb86fc" }}>System Requirements</h3>
+            <p><strong>Processor:</strong> Intel i3 or equivalent (minimum), Intel i5 or above (recommended).</p>
+            <p><strong>RAM:</strong> 4GB (minimum), 8GB or above (recommended).</p>
+            <p><strong>Storage:</strong> At least 50MB of free space.</p>
+            <p><strong>Software Dependencies:</strong> Python 3.10 or above, Scapy (Networking library).</p>
+
+            <h3 style={{ marginTop: "20px", color: "#bb86fc" }}>Support and Feedback</h3>
+            <p>
+              If you encounter any issues or have feature requests, reach out to
+              our support team at support@sentinelai.com or visit our Help
+              Center.
+            </p>
           </div>
         </div>
 

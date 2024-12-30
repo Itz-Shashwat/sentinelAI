@@ -62,6 +62,9 @@ function Sidebar() {
           <li>
             <Link to="/contact" className="sidebar-link">Contact</Link>
           </li>
+          <li>
+            <Link to="/support" className="sidebar-link">Support</Link>
+          </li>
         </ul>
       </div>
     </>

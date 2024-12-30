@@ -7,6 +7,7 @@ import GANDashboard from './GANDashboard';
 import About from './About';
 import FileDownload from './FileDownload';
 import Contact from './Contact';
+import Support from './Support';
 
 function App() {
   return (
@@ -18,8 +19,8 @@ function App() {
         <Route path="/about" element={<About/>}/>
         <Route path="/download" element={<FileDownload/>}/>
         <Route path="/contact" element={<Contact/>}/>
+        <Route path="/support" element={<Support/>}/>
       </Routes>
-
       </div>
     </Router>
   );

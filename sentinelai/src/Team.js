@@ -1,5 +1,8 @@
 import React from "react";
 import ShashwatImage from "./assets/shashwat.png";
+import ved from "./assets/veda.jpg"
+import hershe from "./assets/harshii.jpg"
+import kav from "./assets/kavya.jpg"
 
 // CSS in JS for dark theme and flexbox layout
 const styles = {
@@ -76,6 +79,36 @@ function Team() {
       website: "https://shashwatprasad66.wixsite.com/knowmore",
       image: ShashwatImage,
     },
+    {
+        name: "Veda Sree Chalasani",
+        role: "UI Developer ",
+        rollNo: "HU21CSEN0100737",
+        email: "vedasree0812@gmail.com",
+        linkedin: " https://www.linkedin.com/in/vedasree812",
+        github: " https://github.com/Veda-Sree",
+        website: "https://shashwatprasad66.wixsite.com/knowmore",
+        image: ved,
+      },
+      {
+        name: "Agastya Harshini Sai",
+        role: "UI Developer ",
+        rollNo: "HU21CSEN0101155",
+        email: "harshinisai.agastya@gmail.com",
+        linkedin: "www.linkedin.com/in/harshiniagastya",
+        github: "https://github.com/harshini2408",
+        website: "https://shashwatprasad66.wixsite.com/knowmore",
+        image: hershe,
+      },
+      {
+        name: "Kavya Kothapalli",
+        role: "UI Developer ",
+        rollNo: "HU21CSEN0101371",
+        email: "kavyakothapa2002@gmail.com",
+        linkedin: " https://in.linkedin.com/in/kavyakothapallii",
+        github: " https://github.com/kavyakothapallii",
+        website: "https://shashwatprasad66.wixsite.com/knowmore",
+        image: kav,
+      },
   ];
 
   return (
