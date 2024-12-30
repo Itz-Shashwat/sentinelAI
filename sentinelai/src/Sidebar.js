@@ -59,6 +59,9 @@ function Sidebar() {
           <li>
             <Link to="/download" className="sidebar-link">Download</Link>
           </li>
+          <li>
+            <Link to="/contact" className="sidebar-link">Contact</Link>
+          </li>
         </ul>
       </div>
     </>

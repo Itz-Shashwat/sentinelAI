@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import GANDashboard from './GANDashboard';
 import About from './About';
 import FileDownload from './FileDownload';
+import Contact from './Contact';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/gan-operations-dashboard" element={<GANDashboard />} />
         <Route path="/about" element={<About/>}/>
         <Route path="/download" element={<FileDownload/>}/>
+        <Route path="/contact" element={<Contact/>}/>
       </Routes>
 
       </div>
