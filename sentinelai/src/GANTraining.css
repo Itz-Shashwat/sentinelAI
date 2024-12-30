@@ -7,10 +7,10 @@ body {
   .gan-container {
     max-width: 800px;
     margin: 0 auto;
+    background: linear-gradient(135deg, rgb(16, 16, 40), rgba(112, 112, 120, 0.87));
     padding: 20px;
-    background: linear-gradient(135deg, rgb(22, 22, 41), rgba(38, 43, 108, 0.87));
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(20, 2, 44, 0.2);
   }
   
   h1 {

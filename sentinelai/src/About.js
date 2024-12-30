@@ -74,7 +74,7 @@ function About() {
         <div style={mainContentStyle}>
           {/* Header */}
           <div style={headerStyle}>
-            <h1 style={{ fontSize: "2.5rem", color: "rgba(255, 255, 255, 0.7)" }}>SentinelAI</h1>
+            <h1 style={{ fontSize: "2.5rem", color: "#bb86fc" }}>SentinelAI</h1>
           </div>
 
           <section style={{ padding: "40px", maxWidth: "800px", margin: "0 auto", fontFamily: "'Poppins', sans-serif", lineHeight: "1.6" }}>
