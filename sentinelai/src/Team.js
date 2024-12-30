@@ -94,7 +94,7 @@ function Team() {
         role: "UI Developer ",
         rollNo: "HU21CSEN0101155",
         email: "harshinisai.agastya@gmail.com",
-        linkedin: "www.linkedin.com/in/harshiniagastya",
+        linkedin: "https://linkedin.com/in/harshiniagastya",
         github: "https://github.com/harshini2408",
         website: "https://shashwatprasad66.wixsite.com/knowmore",
         image: hershe,

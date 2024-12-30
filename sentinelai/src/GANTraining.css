@@ -1,14 +1,14 @@
 body {
     font-family: Arial, sans-serif;
-    background: #000000;
     color: #333;
+    background-color: "#1e1e2f",
   }
   
   .gan-container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background: linear-gradient(135deg, rgba(31, 31, 46, 0.9), rgba(87, 73, 85, 0.8));
+    background: linear-gradient(135deg, rgb(22, 22, 41), rgba(38, 43, 108, 0.87));
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }

@@ -34,9 +34,9 @@ const FileDownload = () => {
   };
 
   return (
-    <div style={{ display: "flex", height: "100vh" }}>
+    <div style={{ display: "flex", height: "100vh", backgroundColor:"#1e1e2f"}}>
       {/* Sidebar */}
-      <div style={{ width: "250px", backgroundColor: "#2a2a40" }}>
+      <div style={{ width: "250px"}}>
         <Sidebar />
       </div>
 

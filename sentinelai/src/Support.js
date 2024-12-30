@@ -8,7 +8,6 @@ function Support() {
         margin: 0,
         fontFamily: "'Poppins', sans-serif",
         color: "white",
-        backgroundColor: "#121212",
         display: "flex",
         minHeight: "100vh",
     };

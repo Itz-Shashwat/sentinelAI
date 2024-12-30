@@ -83,7 +83,8 @@ const GANTraining = () => {
   ];
 
   return (
-    <div className="gan-container">
+    <div className="wrapper" style={{backgroundColor:"#1e1e2f"}}>
+    <div className="gan-container" >
       <h1>Understanding GAN Training</h1>
       {sections.map((section, index) => (
         <div key={index} className="section">
@@ -100,6 +101,7 @@ const GANTraining = () => {
         </div>
       ))}
       {copiedMessage && <div className="copied-message">{copiedMessage}</div>}
+    </div>
     </div>
   );
 };

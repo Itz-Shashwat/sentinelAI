@@ -66,12 +66,8 @@ const GANDashboard = () => {
   return (
     <div style={{ display: "flex", height: "100vh" }}>
       {/* Sidebar */}
-      <div
-        style={{
-          width: "250px", // Explicitly set the sidebar width
-          backgroundColor: "#333",
-          color: "white",
-          height: "100vh", // Sidebar should span the whole height
+      <div style={{
+          width: "250px", // Sidebar should span the whole height
         }}
       >
         <Sidebar />
