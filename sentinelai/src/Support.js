@@ -1,6 +1,7 @@
 import React from "react";
 import Sidebar from "./Sidebar";
 import Team from "./Team";
+import SupportPage from "./SupportPage";
 
 function Support() {
     const Wrapperstyle = {
@@ -49,7 +50,7 @@ function Support() {
                 </div>
                 {/* Content Section */}
                 <section style={contentStyle}>
-                    <Team/>
+                    <SupportPage/>
                 </section>
                 {/* Footer */}
                 <footer style={footerStyle}>
