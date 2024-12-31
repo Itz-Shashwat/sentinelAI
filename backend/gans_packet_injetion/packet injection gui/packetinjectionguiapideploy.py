@@ -90,26 +90,29 @@ class DecoyInjectionApp:
                 self.root.after(0, self.ask_for_input)
 
     def ask_for_input(self):
-        num_packets = simpledialog.askinteger("Input", "Enter the total number of packets to inject per real packet:", minvalue=1)
-
         if self.decoy_data is None or self.decoy_data.empty:
-            self.write_output("Decoy data is not available. Please fetch the CSV first.\n")
+            self.write_output("Decoy data is not available. Please load the CSV first.\n")
             return
-
-        # Run the packet injection in a separate thread
-        inject_thread = threading.Thread(target=self.inject_packets, args=(num_packets,))
+    # Start continuous packet injection in a separate thread
+        inject_thread = threading.Thread(target=self.inject_packets)
         inject_thread.daemon = True
         inject_thread.start()
 
-    def inject_packets(self, num_packets):
-        for _ in range(num_packets):
-            # Iterate over the rows in the CSV and inject packets
-            for _, row in self.decoy_data.iterrows():
-                src = row['Source IP']
-                dst = row['Destination IP']
-                protocol = row['Protocol']
-                length = row['Length']
-                self.inject_decoy_packet(src, dst, protocol, length)
+    def inject_packets(self):
+        while True:  # Continuous loop for packet injection
+            if self.decoy_data is not None and not self.decoy_data.empty:
+                for _, row in self.decoy_data.iterrows():
+                    try:
+                        src = row['Source IP']
+                        dst = row['Destination IP']
+                        protocol = row['Protocol']
+                        length = row['Length']
+                        self.inject_decoy_packet(src, dst, protocol, length)
+                    except Exception as e:
+                        self.write_output(f"Error processing row: {e}\n")
+            else:
+                self.write_output("No decoy data available for injection. Please load the CSV.\n")
+                break  # Exit the loop if no decoy data
 
     def start_sniffing(self):
         self.status_label.config(text="Sniffing and injecting decoy packets...", fg="orange")
