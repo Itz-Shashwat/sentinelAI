@@ -123,7 +123,7 @@ const FileDownload = () => {
             </h2>
             <p><strong>Version:</strong> 1.0.0</p>
             <p><strong>Last Updated:</strong> December 30, 2024</p>
-            <p><strong>File Size:</strong> ~15 MB</p>
+            <p><strong>File Size:</strong> ~190 MB</p>
             <p><strong>Supported Platforms:</strong> Windows 10/11 (64-bit)</p>
 
             <h3 style={{ marginTop: "20px", color: "#bb86fc" }}>Overview</h3>
