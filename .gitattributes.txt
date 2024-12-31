@@ -1,0 +1,7 @@
+# Set default behavior to handle all files with LF
+* text=auto
+
+# Force line endings for known file types
+*.ts text eol=lf
+*.js text eol=lf
+*.d.ts text eol=lf
