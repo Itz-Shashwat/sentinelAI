@@ -19,6 +19,7 @@ function About() {
   const contentStyle = {
     display: "flex",
     flex: 1,
+    marginLeft: "27px",
   };
 
   const mainContentStyle = {
@@ -248,7 +249,14 @@ function About() {
       </div>
 
       {/* Footer */}
-      <footer style={footerStyle}>
+      <footer style={{
+        textAlign: "center",
+        marginTop: "auto", // Pushes footer to the bottom
+        fontSize: "0.9rem",
+        color: "#bbbbbb",
+        animation: "slideUp 1s ease",
+        padding: "10px",
+      }}>
         <p>© 2024 SentinelAI. All rights reserved.</p>
       </footer>
     </div>
