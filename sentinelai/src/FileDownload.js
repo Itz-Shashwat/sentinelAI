@@ -33,6 +33,14 @@ const FileDownload = () => {
     }
   };
 
+  const footerStyle = {
+    textAlign: "center",
+    marginTop: "auto", // Pushes footer to the bottom
+    fontSize: "0.9rem",
+    color: "#bbbbbb",
+    animation: "slideUp 1s ease",
+    padding: "10px",
+};
   return (
     <div style={{ display: "flex", height: "100vh", backgroundColor:"#1e1e2f"}}>
       {/* Sidebar */}
@@ -169,6 +177,9 @@ const FileDownload = () => {
             }
           `}
         </style>
+        <footer style={footerStyle}>
+                    <p>© 2024 SentinelAI. All rights reserved.</p>
+                </footer>
       </div>
     </div>
   );

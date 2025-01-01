@@ -179,6 +179,16 @@ const GANDashboard = () => {
             </table>
           </div>
         )}
+        <footer style={{
+          textAlign: "center",
+          marginTop: "650px", // Pushes footer to the bottom
+          fontSize: "0.9rem",
+          color: "#bbbbbb",
+          animation: "slideUp 1s ease",
+          padding: "10px",
+        }}>
+                    <p>© 2024 SentinelAI. All rights reserved.</p>
+                </footer>
       </div>
     </div>
   );
