@@ -64,9 +64,9 @@ def verify_user():
         conn.close()
         
         if user:
-            return jsonify({"message": "User verified successfully."}), 200
+            return jsonify({"message": "true"}), 200
         else:
-            return jsonify({"error": "Invalid username or password."}), 401
+            return jsonify({"error": "false"}), 401
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 

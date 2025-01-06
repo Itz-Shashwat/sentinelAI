@@ -9,6 +9,7 @@ import FileDownload from './FileDownload';
 import Contact from './Contact';
 import Support from './Support';
 import Ganinfo from './Ganinfo';
+import SignInSignUp from './SignInSignUp';
 
 function App() {
   return (

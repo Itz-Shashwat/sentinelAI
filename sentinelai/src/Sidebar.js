@@ -50,6 +50,7 @@ function Sidebar() {
           <li>
             <Link to="/" className="sidebar-link">Home</Link>
           </li>
+          
           <li>
             <Link to="/about" className="sidebar-link">About</Link>
           </li>
