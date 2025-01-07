@@ -20,7 +20,7 @@ def create_database():
     conn.close()
     print("Database and table created.")
 
-# Flask application
+# Flask
 app = Flask(__name__)
 CORS(app)  # Enable CORS
 
