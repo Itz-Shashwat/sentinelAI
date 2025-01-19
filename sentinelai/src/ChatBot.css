@@ -1,0 +1,96 @@
+.chat-bot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .chat-toggle {
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .chat-window {
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    width: 400px; /* Larger width */
+    max-height: 500px; /* Larger height */
+    border: 1px solid #333;
+    border-radius: 8px;
+    background: black; /* Black background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chat-messages {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    border-bottom: 1px solid #444;
+    color: white; /* White text */
+  }
+  
+  .chat-message {
+    margin: 8px 0;
+    padding: 10px 14px;
+    border-radius: 16px;
+    max-width: 90%; /* Adjusted for larger box */
+  }
+  
+  .chat-message.user {
+    background: #0078d7;
+    color: white;
+    align-self: flex-end;
+  }
+  
+  .chat-message.bot {
+    background: #333; /* Darker bot message background */
+    color: white;
+    align-self: flex-start;
+  }
+  
+  .chat-input {
+    display: flex;
+    padding: 10px;
+    background: #222; /* Dark input area */
+    border-top: 1px solid #444;
+  }
+  
+  .chat-input input {
+    flex-grow: 1;
+    padding: 12px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    outline: none;
+    background: #111; /* Dark input box */
+    color: white; /* White text */
+  }
+  
+  .chat-input button {
+    margin-left: 10px;
+    padding: 12px;
+    border: none;
+    background-color: #0078d7;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .chat-input button:disabled {
+    background: #555; /* Disabled button gray */
+  }
+  
+  .chat-input input::placeholder {
+    color: #888; /* Placeholder light gray */
+  }
+  

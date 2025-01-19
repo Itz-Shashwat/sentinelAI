@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Routes, Link } from 'react-router-dom';
 import GANOperationsDashboard from './GANOperationsDashboard';
 import Sidebar from './Sidebar';
+import ChatBot from './ChatBot';
 function LandingPage() {
   const wrapperStyle = {
     margin: 0,
@@ -47,6 +48,7 @@ function LandingPage() {
         <section>
         <GANOperationsDashboard/>
         </section>
+        <ChatBot/>
         {/* Footer */}
         <footer style={footerStyle}>
           <p>© 2024 SentinelAI. All rights reserved.</p>
