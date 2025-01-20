@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./ChatBot.css";
+import { fixedString } from "./constants";
 
 const ChatBot = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,19 +11,7 @@ const ChatBot = () => {
   const [loading, setLoading] = useState(false);
   const [documentContent, setDocumentContent] = useState("");  // Keep the document content in a state
 
-  // Fetch document content when the component mounts
-  useEffect(() => {
-    const fetchDocumentContent = async () => {
-      try {
-        const response = await fetch("/assets/document.txt");  // Ensure it's in the 'public/assets' directory
-        const text = await response.text();
-        setDocumentContent(text);
-      } catch (error) {
-        console.error("Error fetching document content:", error);
-      }
-    };
-    fetchDocumentContent();
-  }, []);
+
 
   const toggleChatBot = () => {
     setIsOpen(!isOpen);
@@ -43,20 +32,18 @@ const ChatBot = () => {
     setLoading(true);
 
     try {
-
       const messages = [
-        { 
-          role: "system", 
-          content: "You are an assistant in the project titled 'Harnessing GANs to generate decoy network packets to mislead cyber attackers by deploying them with each packet transmission.'" 
+        {
+          role: "system",
+          content: `You are an assistant in the project titled "Harnessing GANs to generate decoy network packets to mislead cyber attackers by deploying them with each packet transmission". Your responses must only reference the project details provided: ${fixedString}. Do not provide information beyond this context.`
         },
-        { 
-          role: "user", 
-          content: userInput 
+        {
+          role: "user",
+          content: `You are an assistant in the project titled "Harnessing GANs to generate decoy network packets to mislead cyber attackers by deploying them with each packet transmission". Your responses must only reference the project details provided: ${fixedString}. Only use this information and answer this question ${userInput}.`
         }
       ];
 
       // Debug: Log document content to check it’s being fetched correctly
-      console.log("Document Content:", documentContent);  // Ensure it's not empty
       console.log("User Input:", userInput);  // Debugging
       const response = await fetch("http://127.0.0.1:11434/v1/chat/completions", {
         method: "POST",
