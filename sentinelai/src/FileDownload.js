@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Sidebar from "./Sidebar";
 import { Route, Routes, Link } from "react-router-dom";
+import ChatBot from "./ChatBot";
 
 
 const FileDownload = () => {
@@ -177,6 +178,7 @@ const FileDownload = () => {
             }
           `}
         </style>
+        <ChatBot/>
         <footer style={footerStyle}>
                     <p>© 2024 SentinelAI. All rights reserved.</p>
                 </footer>

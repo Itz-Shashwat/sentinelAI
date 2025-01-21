@@ -1,6 +1,7 @@
 import React from "react";
 import Sidebar from "./Sidebar";
 import Team from "./Team";
+import ChatBot from "./ChatBot";
 
 function Contact() {
     const Wrapperstyle = {
@@ -50,6 +51,7 @@ function Contact() {
                 <section style={contentStyle}>
                     <Team/>
                 </section>
+                <ChatBot/>
                 {/* Footer */}
                 <footer style={footerStyle}>
                     <p>© 2024 SentinelAI. All rights reserved.</p>

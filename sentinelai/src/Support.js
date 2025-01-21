@@ -2,6 +2,7 @@ import React from "react";
 import Sidebar from "./Sidebar";
 import Team from "./Team";
 import SupportPage from "./SupportPage";
+import ChatBot from "./ChatBot";
 
 function Support() {
     const Wrapperstyle = {
@@ -51,6 +52,7 @@ function Support() {
                 <section style={contentStyle}>
                     <SupportPage/>
                 </section>
+                <ChatBot/>
                 {/* Footer */}
                 <footer style={footerStyle}>
                     <p>© 2024 SentinelAI. All rights reserved.</p>

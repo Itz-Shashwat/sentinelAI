@@ -3,6 +3,7 @@ import Sidebar from "./Sidebar";
 import Team from "./Team";
 import SupportPage from "./SupportPage";
 import GANTraining from "./GANTraining";
+import ChatBot from "./ChatBot";
 
 function Ganinfo() {
     const Wrapperstyle = {
@@ -52,6 +53,7 @@ function Ganinfo() {
                 <section style={contentStyle}>
                     <GANTraining/>
                 </section>
+                <ChatBot/>
                 {/* Footer */}
                 <footer style={footerStyle}>
                     <p>© 2024 SentinelAI. All rights reserved.</p>

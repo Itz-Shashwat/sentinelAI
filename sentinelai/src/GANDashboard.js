@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Sidebar from "./Sidebar";
+import ChatBot from "./ChatBot";
 
 const GANDashboard = () => {
   const [dataCount, setDataCount] = useState("");
@@ -179,6 +180,7 @@ const GANDashboard = () => {
             </table>
           </div>
         )}
+        <ChatBot/>
         <footer style={{
           textAlign: "center",
           marginTop: "650px", // Pushes footer to the bottom

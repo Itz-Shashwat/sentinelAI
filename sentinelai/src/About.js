@@ -3,6 +3,7 @@ import { Route, Routes, Link } from 'react-router-dom';
 import GANOperationsDashboard from './GANOperationsDashboard';
 import Sidebar from './Sidebar';
 import sentiImage from './assets/senti.jpg';
+import ChatBot from "./ChatBot";
 
 
 function About() {
@@ -247,7 +248,7 @@ function About() {
 
         </div>
       </div>
-
+      <ChatBot/>
       {/* Footer */}
       <footer style={{
         textAlign: "center",

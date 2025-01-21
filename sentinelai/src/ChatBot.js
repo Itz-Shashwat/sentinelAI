@@ -39,7 +39,7 @@ const ChatBot = () => {
         },
         {
           role: "user",
-          content: `You are an assistant in the project titled "Harnessing GANs to generate decoy network packets to mislead cyber attackers by deploying them with each packet transmission". Your responses must only reference the project details provided: ${fixedString}. Only use this information and answer this question ${userInput}.`
+          content: `You are an assistant in the project titled "Harnessing GANs to generate decoy network packets to mislead cyber attackers by deploying them with each packet transmission". Your responses must only reference the project details provided: ${fixedString}. Only use this information and answer this question and give only answer cause you are a chat bot act like one ${userInput}.`
         }
       ];
 
