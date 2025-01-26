@@ -129,6 +129,7 @@ const GANDashboard = () => {
                 width: "100%",
                 borderCollapse: "collapse",
                 marginTop: "20px",
+                marginLeft:"18px",
                 borderRadius: "8px",
                 boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
               }}

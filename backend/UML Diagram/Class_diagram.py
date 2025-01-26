@@ -1,12 +1,12 @@
+import webbrowser
 from plantuml import PlantUML
 
-# Define PlantUML server URL (you can use a local PlantUML jar if needed)
+# Define PlantUML server URL
 server = PlantUML(url='http://www.plantuml.com/plantuml/img/')
 
 # PlantUML diagram definition
 uml_diagram = """
 @startuml
-
 class DataLoader {
     - csv_file_path: String
     - output_csv_path: String
@@ -25,6 +25,11 @@ class Discriminator {
     + build_discriminator(): Sequential
 }
 
+class TrainedModel {
+    - Synthetic Data: Sequential
+    + Generate_synthetic(): Sequential
+}
+
 class GAN {
     - generator: Generator
     - discriminator: Discriminator
@@ -35,11 +40,14 @@ class GAN {
 DataLoader --> GAN : provides data for training
 Generator --> GAN : is part of
 Discriminator --> GAN : is part of
-
+GAN --> TrainedModel : Trains
 @enduml
 """
-response = server.processes(uml_diagram)
-with open(r"G:\sem8\Capstone\Codes\git repo\sentinelAI\backend\UML Diagramgan_class_diagram\.png", "wb") as diagram_file:
-    diagram_file.write(response)
 
-print("UML diagram generated and saved as 'gan_class_diagram.png'")
+# Generate the UML diagram image URL
+response_url = server.get_url(uml_diagram)
+
+# Open the URL in the default web browser
+webbrowser.open(response_url)
+
+print("UML diagram opened in the browser.")
