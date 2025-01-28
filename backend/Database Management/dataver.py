@@ -2,7 +2,7 @@ import sqlite3
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 
-# Create the SQLite database and user table
+# Create the SQLite database and user table adsd
 def create_database():
     conn = sqlite3.connect("sentinel_user_data.db")
     cursor = conn.cursor()
@@ -20,7 +20,7 @@ def create_database():
     conn.close()
     print("Database and table created.")
 
-# Flask
+# Flask checking 
 app = Flask(__name__)
 CORS(app)  # Enable CORS
 
