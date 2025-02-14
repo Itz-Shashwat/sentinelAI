@@ -1,4 +1,4 @@
-                                                                          🔥 Sentinel AI: GAN-Powered Network Decoy Injection
+🔥 Sentinel AI: GAN-Powered Network Decoy Injection
 Sentinel AI is a cybersecurity project that leverages Generative Adversarial Networks (GANs) to generate realistic decoy network traffic. The system detects outgoing network packets and injects fake but convincing packets into the network to mislead potential attackers and enhance security.
 
 🚀 Key Features:
